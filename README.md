@@ -29,8 +29,12 @@ wget https://ru-open-stt-v01.ams3.digitaloceanspaces.com/ru_open_stt_v01.tar.gz_
 wget https://ru-open-stt-v01.ams3.digitaloceanspaces.com/ru_open_stt_v01.tar.gz_ae
 wget https://ru-open-stt-v01.ams3.digitaloceanspaces.com/ru_open_stt_v01.tar.gz_af
 ```
+For multi-threaded downloads use aria2 with `-x` flag.
 
-2. For multi-threaded downloads use aria2 with `-x` flag.
+2. Download the meta data:
+```
+wget https://ru-open-stt-v01.ams3.digitaloceanspaces.com/ru_open_stt_v01_public.csv
+```
 
 3. Put the chunks together:
 `cat ru_open_stt_v01.tar.gz_* > ru_open_stt_v01.tar.gz`
