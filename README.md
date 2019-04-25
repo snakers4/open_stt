@@ -25,6 +25,7 @@ Let's make STT in Russian (and more) as open and available as CV models xD
 | russian_single                | 3,357      | 9     | 1   | 9.3s   | 102      | Public STT dataset | Alignment     | 99%     | Crisp        |
 | public_lecture_1              | 6,803      | 6     | 1   | 3.4s   | 47       | Lectures           | Subtitles     | >95%    | Crisp        |
 | Total                         | 2,825,904  | 1,771 | 190 |        |          |                    |               |         |              |
+
 # **Downloads**
 
 ## **Links**
@@ -32,7 +33,7 @@ Let's make STT in Russian (and more) as open and available as CV models xD
 Meta data file.
 
 | Dataset                               | GB   | GB, compressed | Audio |  Source | Manifest  |
-|---------------------------------------|------|----------------|-------|  -------|
+|---------------------------------------|------|----------------|-------|  -------| ----------|
 | tts_russian_addresses_rhvoice_4voices | 80.9 | 67.0           |   [part1](), [part2](), [part3](), [part4]()     | TTS | [link]() |
 | public_youtube700                     | 75.0 | 67.0           |   [part1](), [part2](), [part3](), [part4]()    | YouTube videos | [link]() |
 | asr_public_phone_calls_1              | 22.7 | 19.0           |   [part1]()    | ASR + public phone calls | [link]() |
