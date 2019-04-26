@@ -14,20 +14,20 @@ Let's make STT in Russian (and more) as open and available as CV models.
 
 # **Dataset composition**
 
-| Dataset                       | Utterances | Hours | GB  | Av len | Av chars | Comment            | Annotation    | Quality/noise |
-|-------------------------------|------------|-------|-----|------- |----------|--------------------|---------------|---------------|
-| asr_public_phone_calls_2 (*)  |            | 1,500 |     |        |          | * Coming soon      |               |               |
-| public_youtube1500 (*)        |            | 1,500 |     |        |          | * Coming soon      |               |               |
-| tts_russian_addresses         | 1,741,838  | 754   | 81  | 1.6s   | 20       | Russian addresses  | TTS, 4 voices | 100% / crisp  |
-| public_youtube700             | 759,483    | 701   | 75  | 3.3s   | 43       | Youtube videos     | Subtitles     | >95% / ~crisp |
-| asr_public_phone_calls_1      | 233,868    | 211   | 23  | 3.3s   | 29       | Phone calls        | ASR           | 70%  / noisy  |
-| asr_public_stories_1          | 46,142     | 38    | 4   | 3.0s   | 30       | Books              | ASR           | 70%  / crisp  |
-| public_series_1               | 20,243     | 17    | 2   | 3.1s   | 38       | Youtube videos     | Subtitles     | 95%  / ~crisp |
-| ru_RU                         | 5,826      | 17    | 2   | 10.8s  | 12       | Public STT dataset | Alignment     | 99%  / crisp  |
-| voxforge_ru                   | 8,344      | 17    | 2   | 7.5s   | 77       | Public STT dataset | Reading       | 100% / crisp  |
-| russian_single                | 3,357      | 9     | 1   | 9.3s   | 102      | Public STT dataset | Alignment     | 99%  / crisp  |
-| public_lecture_1              | 6,803      | 6     | 1   | 3.4s   | 47       | Lectures           | Subtitles     | >95% / crisp  |
-| Total                         | 2,825,904  | 1,771 | 190 |        |          |                    |               |               |
+| Dataset                       | Utterances | Hours | GB  | Av len/chars | Comment          | Annotation    | Quality/noise |
+|-------------------------------|------------|-------|-----|-------  -----|------------------|---------------|---------------|
+| asr_public_phone_calls_2 (*)  |            | 1,500 |     |              | * Coming soon    |               |               |
+| public_youtube1500 (*)        |            | 1,500 |     |              | * Coming soon    |               |               |
+| tts_russian_addresses         | 1,741,838  | 754   | 81  | 1.6s  / 20   | Russian addresses| TTS, 4 voices | 100% / crisp  |
+| public_youtube700             | 759,483    | 701   | 75  | 3.3s  / 43   | Youtube videos   | Subtitles     | >95% / ~crisp |
+| asr_public_phone_calls_1      | 233,868    | 211   | 23  | 3.3s  / 29   | Phone calls      | ASR           | 70%  / noisy  |
+| asr_public_stories_1          | 46,142     | 38    | 4   | 3.0s  / 30   | Books            | ASR           | 70%  / crisp  |
+| public_series_1               | 20,243     | 17    | 2   | 3.1s  / 38   | Youtube videos   | Subtitles     | 95%  / ~crisp |
+| ru_RU                         | 5,826      | 17    | 2   | 10.8s / 12   | Public dataset   | Alignment     | 99%  / crisp  |
+| voxforge_ru                   | 8,344      | 17    | 2   | 7.5s  / 77   | Public dataset   | Reading       | 100% / crisp  |
+| russian_single                | 3,357      | 9     | 1   | 9.3s  / 102  | Public dataset   | Alignment     | 99%  / crisp  |
+| public_lecture_1              | 6,803      | 6     | 1   | 3.4s  / 47   | Lectures         | Subtitles     | >95% / crisp  |
+| Total                         | 2,825,904  | 1,771 | 190 |              |                  |               |               |
 
 # **Downloads**
 
@@ -37,7 +37,7 @@ Meta data [file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_meta_dat
 
 | Dataset                               | GB   | GB, compressed | Audio |  Source | Manifest  |
 |---------------------------------------|------|----------------|-------|  -------| ----------|
-| tts_russian_addresses_rhvoice_4voices | 80.9 | 67.0           |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.tar.gz_ab), [part2](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.tar.gz_ab), [part3](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.tar.gz_ac), [part4](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.tar.gz_ad)     | TTS | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.csv) |
+| tts_russian_addresses_rhvoice_4voices | 80.9 | 67.0           |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.tar.gz_aa), [part2](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.tar.gz_ab), [part3](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.tar.gz_ac), [part4](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.tar.gz_ad)     | TTS | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.csv) |
 | public_youtube700                     | 75.0 | 67.0           |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700.tar.gz_aa), [part2](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700.tar.gz_ab), [part3](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700.tar.gz_ac), [part4](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700.tar.gz_ad)    | YouTube videos | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700.csv) |
 | asr_public_phone_calls_1              | 22.7 | 19.0           |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_1.tar.gz)    | ASR + public phone calls | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_1.csv) |
 | asr_public_stories_1                  | 4.1  | 3.8            |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_1.tar.gz)    | Public stories | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_1.csv) |
