@@ -15,7 +15,7 @@ Let's make STT in Russian (and more) as open and available as CV models.
 # **Dataset composition**
 
 | Dataset                       | Utterances | Hours | GB  | Av len/chars | Comment          | Annotation    | Quality/noise |
-|-------------------------------|------------|-------|-----|-------  -----|------------------|---------------|---------------|
+|-------------------------------|------------|-------|-----|--------------|------------------|---------------|---------------|
 | asr_public_phone_calls_2 (*)  |            | 1,500 |     |              | * Coming soon    |               |               |
 | public_youtube1500 (*)        |            | 1,500 |     |              | * Coming soon    |               |               |
 | tts_russian_addresses         | 1,741,838  | 754   | 81  | 1.6s  / 20   | Russian addresses| TTS, 4 voices | 100% / crisp  |
