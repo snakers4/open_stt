@@ -1,8 +1,8 @@
 # **Russian Open STT Dataset**
 
 Arguably the largest public Russian STT dataset up to date:
-- ~5m utterances;
-- ~4,200 hours;
+- ~4.6m utterances;
+- ~400hours;
 - 457GB;
 - Additional 1,500 hours ... and more ... to be released soon!;
 - And then maybe even more hours to be released!;
@@ -18,20 +18,19 @@ Let's make STT in Russian (and more) as open and available as CV models.
 | Dataset                   | Utterances | Hours | GB  | Av s/chars | Comment          | Annotation  | Quality/noise |
 |---------------------------|------------|-------|-----|------------|------------------|-------------|---------------|
 | public_youtube1500 (*)    |            | 1,500 |     |            | * Coming soon    |             |               |
-| audiobook_2               | 1,149,404  | 1,511 | 166 | 4.7s / 56  | Books            | Alignment   | 99%  / crisp  |
-| audiobook_1               |   196,666  |   237 | 26  | 4.3s / 50  | Books            | Alignment   | 99%  / crisp  |
-| public_youtube700         |   759,483  |   701 | 75  | 3.3s / 43  | Youtube videos   | Subtitles   | 95%  / ~crisp |
-| tts_russian_addresses     | 1,741,838  |   754 | 81  | 1.6s / 20  | Russian addresses| TTS 4 voices| 100% / crisp  |
-| asr_public_phone_calls_2  |   603,797  |   601 | 66  | 3.6s / 37  | Phone calls      | ASR         | 70%  / noisy  |
-| asr_public_phone_calls_1  |   233,868  |   211 | 23  | 3.3s / 29  | Phone calls      | ASR         | 70%  / noisy  |
-| asr_public_stories_2      |    78,186  |    78 | 9   | 3.5s / 43  | Books            | ASR         | 80%  / crisp  |
-| asr_public_stories_1      |    46,142  |    38 | 4   | 3.0s / 30  | Books            | ASR         | 80%  / crisp  |
-| public_series_1           |    20,243  |    17 | 2   | 3.1s / 38  | Youtube videos   | Subtitles   | 95%  / ~crisp |
-| ru_RU                     |     5,826  |    17 | 2   | 11s  / 12  | Public dataset   | Alignment   | 99%  / crisp  |
-| voxforge_ru               |     8,344  |    17 | 2   | 7.5s / 77  | Public dataset   | Reading     | 100% / crisp  |
-| russian_single            |     3,357  |     9 | 1   | 9.3s / 102 | Public dataset   | Alignment   | 99%  / crisp  |
-| public_lecture_1          |     6,803  |     6 | 1   | 3.4s / 47  | Lectures         | Subtitles   | 95%  / crisp  |
-| Total                     |  4,853,957 | 4,198 | 457 |            |                  |             |               |
+| audiobook_2               | 1,149,404  | 1,511 | 166 | 4.7s / 56  | Books            | Alignment   | 95%  / crisp  |
+| public_youtube700         |   759,483  |   701 |  75 | 3.3s / 43  | Youtube videos   | Subtitles   | 95%  / ~crisp |
+| tts_russian_addresses     | 1,741,838  |   754 |  81 | 1.6s / 20  | Russian addresses| TTS 4 voices| 100% / crisp  |
+| asr_public_phone_calls_2  |   603,797  |   601 |  66 | 3.6s / 37  | Phone calls      | ASR         | 70%  / noisy  |
+| asr_public_phone_calls_1  |   233,868  |   211 |  23 | 3.3s / 29  | Phone calls      | ASR         | 70%  / noisy  |
+| asr_public_stories_2      |    78,186  |    78 |   9 | 3.5s / 43  | Books            | ASR         | 80%  / crisp  |
+| asr_public_stories_1      |    46,142  |    38 |   4 | 3.0s / 30  | Books            | ASR         | 80%  / crisp  |
+| public_series_1           |    20,243  |    17 |   2 | 3.1s / 38  | Youtube videos   | Subtitles   | 95%  / ~crisp |
+| ru_RU                     |     5,826  |    17 |   2 | 11s  / 12  | Public dataset   | Alignment   | 99%  / crisp  |
+| voxforge_ru               |     8,344  |    17 |   2 | 7.5s / 77  | Public dataset   | Reading     | 100% / crisp  |
+| russian_single            |     3,357  |     9 |   1 | 9.3s / 102 | Public dataset   | Alignment   | 99%  / crisp  |
+| public_lecture_1          |     6,803  |     6 |   1 | 3.4s / 47  | Lectures         | Subtitles   | 95%  / crisp  |
+| Total                     | 4,657,291  | 3,961 | 431 |            |                  |             |               |
 
 # **Downloads**
 
@@ -42,7 +41,6 @@ Meta data [file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_meta_dat
 
 | Dataset                               | GB   | GB, compressed | Audio |  Source | Manifest  |
 |---------------------------------------|------|----------------|-------|  -------| ----------|
-| audiobook_1                           | 26   | 20.8          |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/audiobooks_1.tar.gz)  | Public books + alignment | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/private_buriy_audiobooks_1.csv) |
 | audiobook_2                           | 166  | 131.7          |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/audiobooks_2.tar.gz_aa), [part2](https://ru-open-stt.ams3.digitaloceanspaces.com/audiobooks_2.tar.gz_ab), [part3](https://ru-open-stt.ams3.digitaloceanspaces.com/audiobooks_2.tar.gz_ac), [part4](https://ru-open-stt.ams3.digitaloceanspaces.com/audiobooks_2.tar.gz_ad), [part5](https://ru-open-stt.ams3.digitaloceanspaces.com/audiobooks_2.tar.gz_ae), [part6](https://ru-open-stt.ams3.digitaloceanspaces.com/audiobooks_2.tar.gz_af), [part7](https://ru-open-stt.ams3.digitaloceanspaces.com/audiobooks_2.tar.gz_ag)    | Public books + alignment | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/private_buriy_audiobooks_2.csv) |
 | asr_public_phone_calls_2              | 66   | 51.7          |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2.tar.gz_aa), [part2](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2.tar.gz_ab), [part3](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2.tar.gz_ac)  | ASR + public phone calls | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2.csv) |
 | asr_public_stories_2                           | 9  | 7.5          |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2.tar.gz)  | Public books + alignment | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2.csv) |
@@ -114,11 +112,6 @@ Meta data [file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_meta_dat
     </tr>
     <tr>
       <td>manifest</td>
-      <td>697738331b6021890c29a0d415d0f22d</td>
-      <td>private_buriy_audiobooks_1.csv</td>
-    </tr>
-    <tr>
-      <td>manifest</td>
       <td>3b67e27c1429593cccbf7c516c4b582d</td>
       <td>private_buriy_audiobooks_2.csv</td>
     </tr>
@@ -186,11 +179,6 @@ Meta data [file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_meta_dat
       <td>audio</td>
       <td>7533581bb26975212817bcacb25546d0</td>
       <td>asr_public_stories_2.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>d7d374025c56ca556d9cde86b9fdffda</td>
-      <td>audiobooks_1.tar.gz</td>
     </tr>
     <tr>
       <td>audio</td>
