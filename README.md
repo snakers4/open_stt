@@ -1,4 +1,4 @@
-# **Russian Open Speech To Text (STT/ASR) Datase**
+# **Russian Open Speech To Text (STT/ASR) Dataset**
 
 Arguably the largest public Russian STT dataset up to date:
 - ~4.6m utterances;
@@ -12,6 +12,19 @@ Prove [us](mailto:open_stt@googlegroups.com) wrong!
 Open issues, collaborate, submit a PR, contribute, share your datasets!
 Let's make STT in Russian (and more) as open and available as CV models.
 
+**Table of contents**
+  - [Dataset composition](https://github.com/snakers4/open_stt/#dataset-composition)
+  - [Downloads](https://github.com/snakers4/open_stt/#downloads)
+    - [Links](https://github.com/snakers4/open_stt/#links)
+    - [Download-instructions](https://github.com/snakers4/open_stt/#download-instructions)
+    - [Check md5sum](https://github.com/snakers4/open_stt/#check-md5sum)
+  - [Annotation methodology](https://github.com/snakers4/open_stt/#annotation-methodology)
+  - [Audio normalization](https://github.com/snakers4/open_stt/#audio-normalization)
+  - [Disk db methodology](https://github.com/snakers4/open_stt/#on-disk-db-methodology)
+  - [Helper functions](https://github.com/snakers4/open_stt/#helper-functions)
+  - [Contacts](https://github.com/snakers4/open_stt/#contacts)
+  - [FAQ](https://github.com/snakers4/open_stt/#faq)
+  - [License](https://github.com/snakers4/open_stt/#license)
 
 # **Dataset composition**
 
@@ -32,7 +45,8 @@ Let's make STT in Russian (and more) as open and available as CV models.
 | public_lecture_1          |     6,803  |     6 |   1 | 3.4s / 47  | Lectures         | Subtitles   | 95%  / crisp  |
 | Total                     | 4,657,291  | 3,961 | 431 |            |                  |             |               |
 
-**(*)Automatic alignment**
+**(*) Automatic alignment**
+
 This alignment was performed using [Yuri's](https://github.com/buriy/) alignment tool.
 Contact him if you need alignment for your own dataset.
 
