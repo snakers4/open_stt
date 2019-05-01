@@ -47,8 +47,8 @@ Let's make STT in Russian (and more) as open and available as CV models.
 
 **(*) Automatic alignment**
 
-This alignment was performed using [Yuri's](https://github.com/buriy/) alignment tool.
-Contact him if you need alignment for your own dataset.
+This alignment was performed using Yuri's alignment tool.
+[Contact him](mailto:open_stt@googlegroups.com) if you need alignment for your own dataset.
 
 # **Downloads**
 
@@ -381,10 +381,11 @@ save_manifest(train_manifest,
 Please contact us [here](mailto:open_stt@googlegroups.com) or just create a GitHub issue!
 
 **Authors in alphabetic order:**
-- Baburov Yuri;
-- Slizhikova Anna;
-- Veysov Alexander;
-- Voronin Dmitry;
+- Anna Slizhikova;
+- Alexander Veysov;
+- Dmitry Voronin;
+- Yuri Baburov;
+
 
 # **FAQ**
 
@@ -427,4 +428,5 @@ Ultimately it leads to worse-off situation for the general community.
 - Looks like scipy does not always write meta-data when saving wavs (or you should save (N,1) shaped file) - this can be fixed as shown above;
 
 # **License**
-Dual license, cc-by-nc and commercial usage available after agreement with dataset authors
+Dual license, cc-by-nc and commercial usage available after agreement with dataset authors.
+Except for VoxForge, its license is GNU GPL 3.0.
