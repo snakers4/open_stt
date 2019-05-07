@@ -7,7 +7,6 @@ Arguably the largest public Russian STT dataset up to date:
 - Additional 1,500 hours ... and more ... to be released soon!;
 - And then maybe even more hours to be released!;
 
-
 Prove [us](mailto:open_stt@googlegroups.com) wrong!
 Open issues, collaborate, submit a PR, contribute, share your datasets!
 Let's make STT in Russian (and more) as open and available as CV models.
@@ -49,6 +48,16 @@ Let's make STT in Russian (and more) as open and available as CV models.
 
 This alignment was performed using Yuri's alignment tool.
 [Contact him](mailto:open_stt@googlegroups.com) if you need alignment for your own dataset.
+
+# **_update 2019-05-07_ Help needed!**
+
+**If you want to support the project, you can:**
+- Help us with hosting (create a mirror) / provide a reliable node for torrent;
+- Help us with writing some [helper](https://github.com/snakers4/open_stt/issues/2) functions;
+- [Donate](https://buymeacoff.ee/8oneCIN) (each coffee pays for several full downloads) / use our DO referral [link](https://sohabr.net/habr/post/357748/) to help;
+
+We are converting the dataset to MP3 now.
+Please contact us using the below contacts, if you would like to help.
 
 # **Downloads**
 
@@ -388,6 +397,12 @@ Please contact us [here](mailto:open_stt@googlegroups.com) or just create a GitH
 
 
 # **FAQ**
+
+## **0. Why not MP3?**
+
+We were planning to make an MP3 version (around 64 kb/s), and probably we were too quick to publish the dataset - it grew out of control.
+Despite having ample free DO credits, we incurred some charges for data transfer.
+We are making / will soon make an MP3 version and replace the links with the new ones.
 
 ## **1. Issues with reading files**
 
