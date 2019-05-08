@@ -17,6 +17,7 @@ Let's make STT in Russian (and more) as open and available as CV models.
     - [Links](https://github.com/snakers4/open_stt/#links)
     - [Download-instructions](https://github.com/snakers4/open_stt/#download-instructions)
     - [Check md5sum](https://github.com/snakers4/open_stt/#check-md5sum)
+    - [End-to-end download scripts](https://github.com/snakers4/open_stt/#end-to-end-download-scripts)
   - [Annotation methodology](https://github.com/snakers4/open_stt/#annotation-methodology)
   - [Audio normalization](https://github.com/snakers4/open_stt/#audio-normalization)
   - [Disk db methodology](https://github.com/snakers4/open_stt/#on-disk-db-methodology)
@@ -315,6 +316,11 @@ Meta data [file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_meta_dat
   </table>
 </details>
 
+## **End to end download scripts**
+
+You can use this [script](https://github.com/snakers4/open_stt/blob/master/download.sh) with this config [file](https://github.com/snakers4/open_stt/blob/master/md5sum.lst).
+You can also [contribute](https://github.com/snakers4/open_stt/issues/2) a similar script in python.
+
 # **Annotation methodology**
 
 The dataset is compiled using open domain sources.
@@ -445,3 +451,4 @@ Ultimately it leads to worse-off situation for the general community.
 # **License**
 Dual license, cc-by-nc and commercial usage available after agreement with dataset authors.
 Except for VoxForge, its license is GNU GPL 3.0.
+Except for Caito.de dataset, its licence is [here](https://www.caito.de/data/Training/LICENSE.txt).
