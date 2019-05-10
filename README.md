@@ -6,8 +6,6 @@ Arguably the largest public Russian STT dataset up to date:
 - ~4000 hours;
 - 431 GB (in `.wav` format in `int16`);
 - Additional 1,500 hours ... and more ... to be released soon!;
-- And then maybe even more hours to be released!;
-
 
 Prove [us](mailto:open_stt@googlegroups.com) wrong!
 Open issues, collaborate, submit a PR, contribute, share your datasets!
@@ -182,7 +180,6 @@ Including links to deprecated files.
       <td>dd5704a9f0c695ccd333dea807a0cd87</td>
       <td>voxforge_ru_mp3.tar.gz</td>
     </tr>
-
     <tr>
       <td>manifest</td>
       <td>b0ce7564ba90b121aeb13aada73a6e30</td>
@@ -240,143 +237,8 @@ Including links to deprecated files.
     </tr>
     <tr>
       <td>audio</td>
-      <td>a5496898ee78654bf398ec6df71540d7</td>
-      <td>asr_public_phone_calls_1.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>e4df5ef50787384648b59f5a87edc0c6</td>
-      <td>asr_public_phone_calls_2.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>97594127a922df8a7bcc2eecd2470805</td>
-      <td>asr_public_phone_calls_2.tar.gz_aa</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>f9b6475f0f2898b16d9e6e0e648fb531</td>
-      <td>asr_public_phone_calls_2.tar.gz_ab</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>b19977c889cda639f621195251e6bb6f</td>
-      <td>asr_public_phone_calls_2.tar.gz_ac</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>657a31b544b10295f909ef4b2ca5c156</td>
-      <td>asr_public_stories_1.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
       <td>7533581bb26975212817bcacb25546d0</td>
       <td>asr_public_stories_2.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>3955616cd89761bf2d54d0e992f7eae5</td>
-      <td>audiobooks_2.tar.gz_aa</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>81b6ec147c0c43bdd56002c41e0288b8</td>
-      <td>audiobooks_2.tar.gz_ab</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>15d4cf99171c2db3f375619f4bd2b6d9</td>
-      <td>audiobooks_2.tar.gz_ac</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>50635b0f4bdf44fae96e5a65f4738e19</td>
-      <td>audiobooks_2.tar.gz_ad</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>f1103be39ffc2da4a98d8f6ddeb50aa0</td>
-      <td>audiobooks_2.tar.gz_ae</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>8b45d2bd8b1fa1d906e36b9fabd9fe4c</td>
-      <td>audiobooks_2.tar.gz_af</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>5104df44933b612b3c1bfc06f6376654</td>
-      <td>audiobooks_2.tar.gz_ag</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>e6b9e5f46811d33ea34ce50f6067a762</td>
-      <td>public_lecture_1.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>86ebf7e30986b8ee8df11f85b35588a0</td>
-      <td>public_series_1.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>dc260dd8151b4fce6cde6d80af13146d</td>
-      <td>public_youtube700.tar.gz_aa</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>04706ef0f98841ec8d2f20a83aca3cf1</td>
-      <td>public_youtube700.tar.gz_ab</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>e11d5b118bf71425e4915e61277a06a9</td>
-      <td>public_youtube700.tar.gz_ac</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>d9a93157263eb9d8078c0e0b88c271de</td>
-      <td>public_youtube700.tar.gz_ad</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>1bbba5eb2f4911c9ed20ec69cbd292cb</td>
-      <td>ru_ru.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>6f79a9c514ad48a5763e3142919fc765</td>
-      <td>russian_single.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>c926df1068218eb9cc8103c94003fcc6</td>
-      <td>tts_russian_addresses_rhvoice_4voices.tar</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>31d515e0bdfc467c3fe63088b817c15c</td>
-      <td>tts_russian_addresses_rhvoice_4voices.tar.gz_aa</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>4ca15694a8d8a638bbdc5e90832eadb4</td>
-      <td>tts_russian_addresses_rhvoice_4voices.tar.gz_ab</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>447559a38cd8bf61c5de64e602f06da3</td>
-      <td>tts_russian_addresses_rhvoice_4voices.tar.gz_ac</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>9131347a97c2e794d7c6d5a265083e83</td>
-      <td>tts_russian_addresses_rhvoice_4voices.tar.gz_ad</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>91e2115b17b1ad08649f428d2caa643b</td>
-      <td>voxforge_ru.tar.gz</td>
     </tr>
   </table>
 </details>
