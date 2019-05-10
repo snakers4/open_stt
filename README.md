@@ -1,11 +1,13 @@
 # **Russian Open Speech To Text (STT/ASR) Dataset**
 
 Arguably the largest public Russian STT dataset up to date:
+- (**new!**) Now in `.mp3` to reduce download time 7-8x;
 - ~4.6m utterances;
 - ~4000 hours;
-- 431 GB;
+- 431 GB (in `.wav` format in `int16`);
 - Additional 1,500 hours ... and more ... to be released soon!;
 - And then maybe even more hours to be released!;
+
 
 Prove [us](mailto:open_stt@googlegroups.com) wrong!
 Open issues, collaborate, submit a PR, contribute, share your datasets!
@@ -50,14 +52,20 @@ Let's make STT in Russian (and more) as open and available as CV models.
 This alignment was performed using Yuri's alignment tool.
 [Contact him](mailto:open_stt@googlegroups.com) if you need alignment for your own dataset.
 
-# **_update 2019-05-07_ Help needed!**
+## **_Update 2019-05-10_**
+
+Quickly converted the dataset to MP3 thanks to the community!
+Waiting for our account for academic torrents to be approved.
+v0.4 will boast MP3 download links.
+
+## **_Update 2019-05-07_ Help needed!**
 
 **If you want to support the project, you can:**
 - Help us with hosting (create a mirror) / provide a reliable node for torrent;
 - Help us with writing some [helper](https://github.com/snakers4/open_stt/issues/2) functions;
 - [Donate](https://buymeacoff.ee/8oneCIN) (each coffee pays for several full downloads) / use our DO referral [link](https://sohabr.net/habr/post/357748/) to help;
 
-We are converting the dataset to MP3 now.
+~~We are converting the dataset to MP3 now.~~
 Please contact us using the below contacts, if you would like to help.
 
 # **Downloads**
@@ -66,22 +74,22 @@ Please contact us using the below contacts, if you would like to help.
 
 Meta data [file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_meta_data_v03.csv).
 
+| Dataset                               | GB, wav | GB, mp3 | Wav   | Mp3 |  Source | Manifest  |
+|---------------------------------------|------|----------------|-------|-----|  -------| ----------|
+| audiobook_2                           | 166  | 21.0          | down  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/private_buriy_audiobooks_2_mp3.tar.gz) | Sources from the Internet + alignment | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/private_buriy_audiobooks_2.csv) |
+| asr_public_phone_calls_2              | 66   | 7.5           | down  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2_mp3.tar.gz) | Sources from the Internet + ASR | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2.csv) |
+| asr_public_stories_2                  | 9 (7.5)  | NA              | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2.tar.gz)   | NA  | Sources from the Internet + alignment | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2.csv) |
+| tts_russian_addresses_rhvoice_4voices | 80.9 | 9.9           | down  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices_mp3.tar.gz) | TTS | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.csv) |
+| public_youtube700                     | 75.0 | 9.6           | down  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700_mp3.tar.gz)   | YouTube videos | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700.csv) |
+| asr_public_phone_calls_1              | 22.7 | 2.6           | down  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_1_mp3.tar.gz)    | Sources from the Internet + ASR | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_1.csv) |
+| asr_public_stories_1                  | 4.1  | 0.5            | down  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_1_mp3.tar.gz)    | Public stories | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_1.csv) |
+| public_series_1                       | 1.9  | 0.2            | down  |  [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/public_series_1_mp3.tar.gz)    | Public series | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_series_1.csv) |
+| ru_RU                                 | 1.9  | 0.2            | down  |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/ru_ru.tar.gz)    | Caito.de [dataset](https://www.caito.de/data/Training/stt_tts/) | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/ru_RU.csv) |
+| voxforge_ru                           | 1.9  | 0.2            | down  |  [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/voxforge_ru_mp3.tar.gz)    | Voxforge  [dataset](https://www.repository.voxforge1.org/downloads/) | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/voxforge_ru.csv) |
+| russian_single                        | 0.9  | 0.1            | down  |  [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/russian_single_mp3.tar.gz)    | Russian single speaker [dataset](https://www.kaggle.com/bryanpark/russian-single-speaker-speech-dataset) | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/russian_single.csv) |
+| public_lecture_1                      | 0.7  | 0.1            | down  |  [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/public_lecture_1_mp3.tar.gz)    | Sources from the Internet  | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_lecture_1.csv) |
+| Total                                 | 431  | 52            |      | | | |
 
-| Dataset                               | GB   | GB, compressed | Audio |  Source | Manifest  |
-|---------------------------------------|------|----------------|-------|  -------| ----------|
-| audiobook_2                           | 166  | 131.7          |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/audiobooks_2.tar.gz_aa), [part2](https://ru-open-stt.ams3.digitaloceanspaces.com/audiobooks_2.tar.gz_ab), [part3](https://ru-open-stt.ams3.digitaloceanspaces.com/audiobooks_2.tar.gz_ac), [part4](https://ru-open-stt.ams3.digitaloceanspaces.com/audiobooks_2.tar.gz_ad), [part5](https://ru-open-stt.ams3.digitaloceanspaces.com/audiobooks_2.tar.gz_ae), [part6](https://ru-open-stt.ams3.digitaloceanspaces.com/audiobooks_2.tar.gz_af), [part7](https://ru-open-stt.ams3.digitaloceanspaces.com/audiobooks_2.tar.gz_ag)    | Sources from the Internet + alignment | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/private_buriy_audiobooks_2.csv) |
-| asr_public_phone_calls_2              | 66   | 51.7          |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2.tar.gz_aa), [part2](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2.tar.gz_ab), [part3](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2.tar.gz_ac)  | Sources from the Internet + ASR | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2.csv) |
-| asr_public_stories_2                           | 9  | 7.5          |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2.tar.gz)  | Sources from the Internet + alignment | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2.csv) |
-| tts_russian_addresses_rhvoice_4voices | 80.9 | 67.0           |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.tar.gz_aa), [part2](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.tar.gz_ab), [part3](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.tar.gz_ac), [part4](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.tar.gz_ad)     | TTS | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.csv) |
-| public_youtube700                     | 75.0 | 67.0           |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700.tar.gz_aa), [part2](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700.tar.gz_ab), [part3](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700.tar.gz_ac), [part4](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700.tar.gz_ad)    | YouTube videos | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700.csv) |
-| asr_public_phone_calls_1              | 22.7 | 19.0           |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_1.tar.gz)    | Sources from the Internet + ASR | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_1.csv) |
-| asr_public_stories_1                  | 4.1  | 3.8            |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_1.tar.gz)    | Public stories | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_1.csv) |
-| public_series_1                       | 1.9  | 1.7            |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/public_series_1.tar.gz)    | Public series | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_series_1.csv) |
-| ru_RU                                 | 1.9  | 1.4            |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/ru_ru.tar.gz)    | Caito.de [dataset](https://www.caito.de/data/Training/stt_tts/) | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/ru_RU.csv) |
-| voxforge_ru                           | 1.9  | 1.5            |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/voxforge_ru.tar.gz)    | Voxforge  [dataset](https://www.repository.voxforge1.org/downloads/) | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/voxforge_ru.csv) |
-| russian_single                        | 0.9  | 0.7            |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/russian_single.tar.gz)    | Russian single speaker [dataset](https://www.kaggle.com/bryanpark/russian-single-speaker-speech-dataset) | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/russian_single.csv) |
-| public_lecture_1                      | 0.7  | 0.6            |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/public_lecture_1.tar.gz)    | Sources from the Internet  | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_lecture_1.csv) |
-| Total                                 | 190  | 163            |      | | | |
 
 
 ## **Download instructions**
@@ -108,6 +116,7 @@ Meta data [file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_meta_dat
 
 ## **Check md5sum**
 
+Including links to deprecated files.
 `md5sum /path/to/downloaded/file`
 
 <details>
@@ -118,6 +127,62 @@ Meta data [file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_meta_dat
       <th>md5sum</th>
       <th>file</th>
     </tr>
+    <tr>
+      <td>audio</td>
+      <td>c356e279fe65530a14079b952a3374e1</td>
+      <td>asr_public_phone_calls_1_mp3.tar.gz</td>
+    </tr>
+    <tr>
+      <td>audio</td>
+      <td>a9c6c721d5c8cbbf683fae325fbc20e9</td>
+      <td>asr_public_phone_calls_2_mp3.tar.gz</td>
+    </tr>
+    <tr>
+      <td>audio</td>
+      <td>dee17aea8d0ba197e5636508bb2ac6a9</td>
+      <td>asr_public_stories_1_mp3.tar.gz</td>
+    </tr>
+    <tr>
+      <td>audio</td>
+      <td>be5cec0a66f44e77adacc8fb09142bbd</td>
+      <td>private_buriy_audiobooks_2_mp3.tar.gz</td>
+    </tr>
+    <tr>
+      <td>audio</td>
+      <td>e1abff84b5318007ae17d293dcc24783</td>
+      <td>public_lecture_1_mp3.tar.gz</td>
+    </tr>
+    <tr>
+      <td>audio</td>
+      <td>3d954ffdc65693fb4caf0bca61171b34</td>
+      <td>public_series_1_mp3.tar.gz</td>
+    </tr>
+    <tr>
+      <td>audio</td>
+      <td>501f16dc4bf529a99315beb2d31e76ef</td>
+      <td>public_youtube700_mp3.tar.gz</td>
+    </tr>
+    <tr>
+      <td>audio</td>
+      <td>ba9e68fdeb5e60fc9292cbeb24c09eb5</td>
+      <td>ru_ru_mp3.tar.gz</td>
+    </tr>
+    <tr>
+      <td>audio</td>
+      <td>d79f85cc8c70cb36255f1cce4d0eddd1</td>
+      <td>russian_single_mp3.tar.gz</td>
+    </tr>
+    <tr>
+      <td>audio</td>
+      <td>d6213dc7930591a99a6dd495bc2eda6a</td>
+      <td>tts_russian_addresses_rhvoice_4voices_mp3.tar.gz</td>
+    </tr>
+    <tr>
+      <td>audio</td>
+      <td>dd5704a9f0c695ccd333dea807a0cd87</td>
+      <td>voxforge_ru_mp3.tar.gz</td>
+    </tr>
+
     <tr>
       <td>manifest</td>
       <td>b0ce7564ba90b121aeb13aada73a6e30</td>
@@ -316,9 +381,11 @@ Meta data [file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_meta_dat
   </table>
 </details>
 
+
 ## **End to end download scripts**
 
 You can use this [script](https://github.com/snakers4/open_stt/blob/master/download.sh) with this config [file](https://github.com/snakers4/open_stt/blob/master/md5sum.lst).
+Please check the config first.
 You can also [contribute](https://github.com/snakers4/open_stt/issues/2) a similar script in python.
 
 # **Annotation methodology**
@@ -404,11 +471,102 @@ Please contact us [here](mailto:open_stt@googlegroups.com) or just create a GitH
 
 # **FAQ**
 
-## **0. Why not MP3?**
+## **0. ~~Why not MP3?~~ MP3 encoding / decoding**
 
-We were planning to make an MP3 version (around 64 kb/s), and probably we were too quick to publish the dataset - it grew out of control.
-Despite having ample free DO credits, we incurred some charges for data transfer.
-We are making / will soon make an MP3 version and replace the links with the new ones.
+#### **Encoding**
+
+Mostly we used `pydub` (via ffmpeg) to convert to MP3.
+We omitted blank files (YouTube mostly).
+We used the following parameters:
+- 16kHz;
+- 32 kbps;
+- Mono;
+
+Usually 128-192 kbps is enough for music with sr of 44 kHz, 64-96 is enough for speech.
+But here we have mono, 16 kHz and usually only one speaker. So 32 kbps was a good choice.
+We did not use other formats like `.ogg`, because `.mp3` is much more popular.
+
+<details><summary>See example</summary>
+<p>
+
+```python
+from pydub import AudioSegment
+
+sound = AudioSegment.from_file(temp_path,
+                               format="wav")
+
+file_handle = sound.export(store_mp3_path,
+                           format="mp3",
+                           parameters =["-ar", "{}".format(str(16000)),"-ac", "1"],
+                           bitrate="{}k".format(str(32)))
+```
+
+</p>
+</details>
+
+#### **Decoding**
+
+It is up to you, but to save space and spare CPU during training, I would suggest the following pipeline to extract the files:
+
+<details><summary>See example</summary>
+<p>
+
+```python
+# you can also use pydub, torchaudio, sox or whatever
+# we ended up using scipy for speed
+# this example also includes hashing step which is not necessary
+import librosa
+import hashlib
+import numpy as np
+from pathlib import Path
+from scipy.io import wavfile
+
+def save_wav_diskdb(wav,
+                    root_folder='../data/ru_open_stt/',
+                    target_sr=16000):
+    assert type(wav) == np.ndarray
+    assert wav.dtype == np.dtype('int16')
+    assert len(wav.shape)==1
+
+    target_format = 'wav'
+    wavb = wav.tobytes()
+
+    # f_path = Path(audio_path)
+    f_hash = hashlib.sha1(wavb).hexdigest()
+
+    store_path = Path(root_folder,
+                      f_hash[0],
+                      f_hash[1:3],
+                      f_hash[3:15]+'.'+target_format)
+
+    store_path.parent.mkdir(parents=True,
+                            exist_ok=True)
+
+    wavfile.write(filename=str(store_path),
+                  rate=target_sr,
+                  data=wav)
+
+    return str(store_path)
+
+root_folder = '../data/'
+# save to int16, mono, 16 kHz to save space
+target_dtype = np.dtype('int16')
+target_sr = 16000
+# librosa reads mp3
+wav, sr = librosa.load(source_mp3_path,
+                       mono=True,
+                       sr=target_sr)
+
+# librosa converts to float32 by default
+wav = (wav * 32767).astype(target_dtype) # cast to int
+
+wav_path = save_wav_diskdb(wav,
+                           root_folder=root_folder,
+                           target_sr=target_sr)
+```
+
+</p>
+</details>
 
 ## **1. Issues with reading files**
 
@@ -444,7 +602,7 @@ TTS does not enjoy the same attention by ML community because it is data hungry 
 Ultimately it leads to worse-off situation for the general community.
 
 ## **3. Known issues with the dataset to be fixed**
-- Blank files in Youtube dataset. Just filter them out using meta-data. Will be fixed in future;
+- ~~Blank files in Youtube dataset~~. Removed in mp3 archive. Meta-data not cleaned;
 - Some files that have low values / crash with tochaudio;
 - Looks like scipy does not always write meta-data when saving wavs (or you should save (N,1) shaped file) - this can be fixed as shown above;
 
