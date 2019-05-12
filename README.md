@@ -14,6 +14,7 @@ Let's make STT in Russian (and more) as open and available as CV models.
 **Table of contents**
   - [Dataset composition](https://github.com/snakers4/open_stt/#dataset-composition)
   - [Downloads](https://github.com/snakers4/open_stt/#downloads)
+    - [Via torrent](https://github.com/snakers4/open_stt/#via-torrent)
     - [Links](https://github.com/snakers4/open_stt/#links)
     - [Download-instructions](https://github.com/snakers4/open_stt/#download-instructions)
     - [Check md5sum](https://github.com/snakers4/open_stt/#check-md5sum)
@@ -25,6 +26,7 @@ Let's make STT in Russian (and more) as open and available as CV models.
   - [Contacts](https://github.com/snakers4/open_stt/#contacts)
   - [FAQ](https://github.com/snakers4/open_stt/#faq)
   - [License](https://github.com/snakers4/open_stt/#license)
+  - [Donations](https://github.com/snakers4/open_stt/#donations)
 
 # **Dataset composition**
 
@@ -50,6 +52,9 @@ Let's make STT in Russian (and more) as open and available as CV models.
 This alignment was performed using Yuri's alignment tool.
 [Contact him](mailto:open_stt@googlegroups.com) if you need alignment for your own dataset.
 
+## **_Update 2019-05-12_**
+Torrent created and uploaded to academictorrents.
+
 ## **_Update 2019-05-10_**
 
 Quickly converted the dataset to MP3 thanks to the community!
@@ -67,6 +72,12 @@ v0.4 will boast MP3 download links.
 Please contact us using the below contacts, if you would like to help.
 
 # **Downloads**
+
+## **Via torrent**
+
+Save us a couple of bucks, download via [torrent](http://academictorrents.com/details/c3fc398b7ef8a5a9ea59f6a375f2c828d09b698a).
+(now download works via muTorrent, but does not work via Transmission).
+
 
 ## **Links**
 
@@ -472,3 +483,7 @@ Ultimately it leads to worse-off situation for the general community.
 Dual license, cc-by-nc and commercial usage available after agreement with dataset authors.
 Except for VoxForge, its license is GNU GPL 3.0.
 Except for Caito.de dataset, its licence is [here](https://www.caito.de/data/Training/LICENSE.txt).
+
+# **Donations**
+
+[Donate](https://buymeacoff.ee/8oneCIN) (each coffee pays for several full downloads) / use our DO referral [link](https://sohabr.net/habr/post/357748/) to help.
