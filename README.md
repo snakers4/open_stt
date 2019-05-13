@@ -52,24 +52,36 @@ Let's make STT in Russian (and more) as open and available as CV models.
 This alignment was performed using Yuri's alignment tool.
 [Contact him](mailto:open_stt@googlegroups.com) if you need alignment for your own dataset.
 
-## **_Update 2019-05-12_**
-Torrent created and uploaded to academictorrents.
+# **Updates**
 
-## **_Update 2019-05-10_**
+## **_Update 2019-05-13_**
 
-Quickly converted the dataset to MP3 thanks to the community!
-Waiting for our account for academic torrents to be approved.
-v0.4 will boast MP3 download links.
+Added the forgotten txt files to mp3 archives.
+Updating the torrent.
 
-## **_Update 2019-05-07_ Help needed!**
+<details>
+  <summary>Click to expand</summary>
 
-**If you want to support the project, you can:**
-- Help us with hosting (create a mirror) / provide a reliable node for torrent;
-- Help us with writing some [helper](https://github.com/snakers4/open_stt/issues/2) functions;
-- [Donate](https://buymeacoff.ee/8oneCIN) (each coffee pays for several full downloads) / use our DO referral [link](https://sohabr.net/habr/post/357748/) to help;
+  ## **_Update 2019-05-12_**
 
-~~We are converting the dataset to MP3 now.~~
-Please contact us using the below contacts, if you would like to help.
+  Torrent created and uploaded to academictorrents.
+
+  ## **_Update 2019-05-10_**
+
+  Quickly converted the dataset to MP3 thanks to the community!
+  Waiting for our account for academic torrents to be approved.
+  v0.4 will boast MP3 download links.
+
+  ## **_Update 2019-05-07_ Help needed!**
+
+  **If you want to support the project, you can:**
+  - Help us with hosting (create a mirror) / provide a reliable node for torrent;
+  - Help us with writing some [helper](https://github.com/snakers4/open_stt/issues/2) functions;
+  - [Donate](https://buymeacoff.ee/8oneCIN) (each coffee pays for several full downloads) / use our DO referral [link](https://sohabr.net/habr/post/357748/) to help;
+
+  ~~We are converting the dataset to MP3 now.~~
+  Please contact us using the below contacts, if you would like to help.
+</details>
 
 # **Downloads**
 
@@ -87,13 +99,13 @@ Meta data [file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_meta_dat
 |---------------------------------------|------|----------------|-------|-----|  -------| ----------|
 | audiobook_2                           | 166  | 21.0          | down  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/private_buriy_audiobooks_2_mp3.tar.gz) | Sources from the Internet + alignment | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/private_buriy_audiobooks_2.csv) |
 | asr_public_phone_calls_2              | 66   | 7.5           | down  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2_mp3.tar.gz) | Sources from the Internet + ASR | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2.csv) |
-| asr_public_stories_2                  | 9 (7.5)  | NA              | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2.tar.gz)   | NA  | Sources from the Internet + alignment | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2.csv) |
+| asr_public_stories_2                  | 9   | 1.1              | down   | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2_mp3.tar.gz)  | Sources from the Internet + alignment | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2.csv) |
 | tts_russian_addresses_rhvoice_4voices | 80.9 | 9.9           | down  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices_mp3.tar.gz) | TTS | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.csv) |
 | public_youtube700                     | 75.0 | 9.6           | down  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700_mp3.tar.gz)   | YouTube videos | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700.csv) |
 | asr_public_phone_calls_1              | 22.7 | 2.6           | down  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_1_mp3.tar.gz)    | Sources from the Internet + ASR | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_1.csv) |
 | asr_public_stories_1                  | 4.1  | 0.5            | down  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_1_mp3.tar.gz)    | Public stories | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_1.csv) |
 | public_series_1                       | 1.9  | 0.2            | down  |  [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/public_series_1_mp3.tar.gz)    | Public series | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_series_1.csv) |
-| ru_RU                                 | 1.9  | 0.2            | down  |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/ru_ru.tar.gz)    | Caito.de [dataset](https://www.caito.de/data/Training/stt_tts/) | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/ru_RU.csv) |
+| ru_RU                                 | 1.9  | 0.2            | down  |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/ru_ru_mp3.tar.gz)    | Caito.de [dataset](https://www.caito.de/data/Training/stt_tts/) | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/ru_RU.csv) |
 | voxforge_ru                           | 1.9  | 0.2            | down  |  [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/voxforge_ru_mp3.tar.gz)    | Voxforge  [dataset](https://www.repository.voxforge1.org/downloads/) | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/voxforge_ru.csv) |
 | russian_single                        | 0.9  | 0.1            | down  |  [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/russian_single_mp3.tar.gz)    | Russian single speaker [dataset](https://www.kaggle.com/bryanpark/russian-single-speaker-speech-dataset) | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/russian_single.csv) |
 | public_lecture_1                      | 0.7  | 0.1            | down  |  [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/public_lecture_1_mp3.tar.gz)    | Sources from the Internet  | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_lecture_1.csv) |
@@ -138,57 +150,62 @@ Including links to deprecated files.
     </tr>
     <tr>
       <td>audio</td>
-      <td>c356e279fe65530a14079b952a3374e1</td>
+      <td>f24e21c69c03062d667caf0f055244f2</td>
+      <td>asr_public_stories_2_mp3.tar.gz</td>
+    </tr>
+    <tr>
+      <td>audio</td>
+      <td>a6f888c53d7cbded85ab51627ef57c96</td>
       <td>asr_public_phone_calls_1_mp3.tar.gz</td>
     </tr>
     <tr>
       <td>audio</td>
-      <td>a9c6c721d5c8cbbf683fae325fbc20e9</td>
+      <td>f707e34f488c62af2e3142085ff595ad</td>
       <td>asr_public_phone_calls_2_mp3.tar.gz</td>
     </tr>
     <tr>
       <td>audio</td>
-      <td>dee17aea8d0ba197e5636508bb2ac6a9</td>
+      <td>baa491ed0b526b2a989b8c4a8897429d</td>
       <td>asr_public_stories_1_mp3.tar.gz</td>
     </tr>
     <tr>
       <td>audio</td>
-      <td>be5cec0a66f44e77adacc8fb09142bbd</td>
+      <td>42b9c8c2e31100d6c5b972c9ac000167</td>
       <td>private_buriy_audiobooks_2_mp3.tar.gz</td>
     </tr>
     <tr>
       <td>audio</td>
-      <td>e1abff84b5318007ae17d293dcc24783</td>
+      <td>7a5704721012fafa115e7316e5f6e058</td>
       <td>public_lecture_1_mp3.tar.gz</td>
     </tr>
     <tr>
       <td>audio</td>
-      <td>3d954ffdc65693fb4caf0bca61171b34</td>
+      <td>16cf820330f9f8b388395d777b2331ac</td>
       <td>public_series_1_mp3.tar.gz</td>
     </tr>
     <tr>
       <td>audio</td>
-      <td>501f16dc4bf529a99315beb2d31e76ef</td>
+      <td>dd048e7110c0c852c353759dad8fec0f</td>
       <td>public_youtube700_mp3.tar.gz</td>
     </tr>
     <tr>
       <td>audio</td>
-      <td>ba9e68fdeb5e60fc9292cbeb24c09eb5</td>
+      <td>579e9d98bd159a27d3573641edee69b0</td>
       <td>ru_ru_mp3.tar.gz</td>
     </tr>
     <tr>
       <td>audio</td>
-      <td>d79f85cc8c70cb36255f1cce4d0eddd1</td>
+      <td>177b041594684623ec7d038613e1330d</td>
       <td>russian_single_mp3.tar.gz</td>
     </tr>
     <tr>
       <td>audio</td>
-      <td>d6213dc7930591a99a6dd495bc2eda6a</td>
+      <td>d7ce4c4116dcc655be2b466f82c98b6e</td>
       <td>tts_russian_addresses_rhvoice_4voices_mp3.tar.gz</td>
     </tr>
     <tr>
       <td>audio</td>
-      <td>dd5704a9f0c695ccd333dea807a0cd87</td>
+      <td>25ea6d9e249a242ecc217acc28c8077b</td>
       <td>voxforge_ru_mp3.tar.gz</td>
     </tr>
     <tr>
