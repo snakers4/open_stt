@@ -87,7 +87,7 @@ Updating the torrent.
 
 ## **Via torrent**
 
-Save us a couple of bucks, download via [torrent](http://academictorrents.com/details/c3fc398b7ef8a5a9ea59f6a375f2c828d09b698a).
+Save us a couple of bucks, download via [torrent](http://academictorrents.com/details/4a2656878dc819354ba59cd29b1c01182ca0e162).
 (now download works via muTorrent, but does not work via Transmission).
 
 
