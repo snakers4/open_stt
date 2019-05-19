@@ -2,14 +2,23 @@
 
 Arguably the largest public Russian STT dataset up to date:
 - (**new!**) Now in `.mp3` to reduce download time 7-8x;
+- (**new!**) Now whole `.wav` version also available via torrent;
 - ~4.6m utterances;
 - ~4000 hours;
 - 431 GB (in `.wav` format in `int16`);
-- Additional 1,500 hours ... and more ... to be released soon!;
 
 Prove [us](mailto:open_stt@googlegroups.com) wrong!
 Open issues, collaborate, submit a PR, contribute, share your datasets!
 Let's make STT in Russian (and more) as open and available as CV models.
+
+**Planned releases:**
+- 1000+ additional hours of YouTube;
+- 1000-10,000 additional hours of books;
+- Some validation / test sets;
+- ~~Plain benchmarks, "bad files"~~;
+- ~~Mp3 torrent~~;
+- ~~Wav torrent~~;
+- ... and more!;
 
 **Table of contents**
   - [Dataset composition](https://github.com/snakers4/open_stt/#dataset-composition)
@@ -54,13 +63,15 @@ This alignment was performed using Yuri's alignment tool.
 
 # **Updates**
 
-## **_Update 2019-05-13_**
-
-Added the forgotten txt files to mp3 archives.
-Updating the torrent.
+## **_Update 2019-05-19_**
+Also shared a wav version via torrent.
 
 <details>
   <summary>Click to expand</summary>
+  ## **_Update 2019-05-13_**
+
+  Added the forgotten txt files to mp3 archives.
+  Updating the torrent.
 
   ## **_Update 2019-05-12_**
 
@@ -87,8 +98,12 @@ Updating the torrent.
 
 ## **Via torrent**
 
-Save us a couple of bucks, download via [torrent](http://academictorrents.com/details/4a2656878dc819354ba59cd29b1c01182ca0e162).
-(now download works via muTorrent, but does not work via Transmission).
+Save us a couple of bucks, download via torrent:
+- An **MP3** [version](http://academictorrents.com/details/4a2656878dc819354ba59cd29b1c01182ca0e162) of the dataset;
+- An **WAV** [version](http://academictorrents.com/details/8823f9ffbcf41a58e504eb5c48a02f1db3189e4f) of the dataset;
+
+You can download separate files via torrent.
+Try several torrent clients if some do not work.
 
 
 ## **Links**
