@@ -64,10 +64,12 @@ This alignment was performed using Yuri's alignment tool.
 # **Updates**
 
 ## **_Update 2019-05-19_**
+
 Also shared a wav version via torrent.
 
 <details>
   <summary>Click to expand</summary>
+
   ## **_Update 2019-05-13_**
 
   Added the forgotten txt files to mp3 archives.
@@ -100,7 +102,7 @@ Also shared a wav version via torrent.
 
 Save us a couple of bucks, download via torrent:
 - An **MP3** [version](http://academictorrents.com/details/4a2656878dc819354ba59cd29b1c01182ca0e162) of the dataset;
-- An **WAV** [version](http://academictorrents.com/details/8823f9ffbcf41a58e504eb5c48a02f1db3189e4f) of the dataset;
+- A **WAV** [version](http://academictorrents.com/details/8823f9ffbcf41a58e504eb5c48a02f1db3189e4f) of the dataset;
 
 You can download separate files via torrent.
 Try several torrent clients if some do not work.
