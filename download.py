@@ -11,7 +11,7 @@ with open("md5sum.lst") as f:
     for line in f:
         md5, file = line.rstrip().split(" ")
         while True:
-            print(file)
+            print("\n" + file)
             response = download(url + "/" + file)
             md5_file = hashlib.md5(open(file, "rb").read()).hexdigest()
             if md5 != md5_file:
