@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import hashlib
 import os
-from urllib import request
+from wget import download
 
 
 url = "https://ru-open-stt.ams3.digitaloceanspaces.com"
@@ -11,9 +11,8 @@ with open("md5sum.lst") as f:
     for line in f:
         md5, file = line.rstrip().split(" ")
         while True:
-            with open(file, "wb+") as data:
-                response = request.urlopen(url + "/" + file)
-                data.write(response.read())
+            print(file)
+            response = download(url + "/" + file)
             md5_file = hashlib.md5(open(file, "rb").read()).hexdigest()
             if md5 != md5_file:
                 os.remove(file)
