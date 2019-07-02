@@ -1,7 +1,7 @@
 # **Russian Open Speech To Text (STT/ASR) Dataset**
 
 Arguably the largest public Russian STT dataset up to date:
-- ~7m utterances (1-2m with less perfect annotation, see #7);
+- ~7m utterances (1-2m with less perfect annotation, see [#7](https://github.com/snakers4/open_stt/issues/7));
 - ~7000 hours;
 - 855 GB (in `.wav` format in `int16`);
 - (**new!**) A new domain - radio;
