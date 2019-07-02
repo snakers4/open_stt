@@ -1,13 +1,13 @@
 # **Russian Open Speech To Text (STT/ASR) Dataset**
 
 Arguably the largest public Russian STT dataset up to date:
-- ~7m utterances (1-2m with less perfect annotation);
+- ~7m utterances (1-2m with less perfect annotation, see #7);
 - ~7000 hours;
 - 855 GB (in `.wav` format in `int16`);
 - (**new!**) A new domain - radio;
 - (**new!**) A larger YouTube dataset with 1000+ additional hours;
 - (**new!**) A small (300 hours) YouTube dataset downloaded in maximum quality;
-- (**new!**) Small validation sets for YouTube / books / public calls manually annotated;
+- (**new!**) 18 hours in 3 validation sets for YouTube / books / public calls with **ground truth annotation**;
 
 
 Prove [us](mailto:open_stt@googlegroups.com) wrong!
@@ -128,7 +128,7 @@ Also shared a wav version via torrent.
 ## **Via torrent**
 
 Save us a couple of bucks, download via torrent:
-- An **MP3** [version](http://academictorrents.com/details/4a2656878dc819354ba59cd29b1c01182ca0e162) of the dataset (v3), to be deprecated;
+- An **MP3** [version](http://academictorrents.com/details/4a2656878dc819354ba59cd29b1c01182ca0e162) of the dataset (v3), to be updated;
 - A **WAV** [version](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2) of the dataset (v5);
 
 You can download separate files via torrent.
@@ -471,7 +471,7 @@ Please contact us [here](mailto:open_stt@googlegroups.com) or just create a GitH
 
 This repo would not be possible without these people:
 - Many thanks for helping to encode the initial bulk of the data into mp3 to [akreal](https://nuget.pkg.github.com/akreal);
-- Small validation sets are a courtesy of [activebc](https://activebc.ru/);
+- 18 hours of ground truth annotation datasets for validation are a courtesy of [activebc](https://activebc.ru/);
 
 Kudos!
 
