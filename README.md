@@ -468,9 +468,10 @@ save_manifest(train_manifest,
 
 Please contact us [here](mailto:open_stt@googlegroups.com) or just create a GitHub issue!
 
-**Authors in alphabetic order:**
+**Authors (in alphabetic order):**
 - Anna Slizhikova;
 - Alexander Veysov;
+- Dilyara Nurtdinova;
 - Dmitry Voronin;
 - Yuri Baburov;
 
