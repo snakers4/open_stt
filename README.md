@@ -471,7 +471,7 @@ Please contact us [here](mailto:open_stt@googlegroups.com) or just create a GitH
 **Authors (in alphabetic order):**
 - Anna Slizhikova;
 - Alexander Veysov;
-- Dilyara Nurtdinova;
+- Diliara Nurtdinova;
 - Dmitry Voronin;
 - Yuri Baburov;
 
