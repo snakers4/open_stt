@@ -1,9 +1,11 @@
+![](https://img.shields.io/github/v/release/snakers4/open_stt?include_prereleases&style=for-the-badge)
 
 [![Donations](https://opencollective.com/open_stt/tiers/donation/badge.svg?label=donations&color=brightgreen)](https://opencollective.com/open_stt)
 [![Backers](https://opencollective.com/open_stt/tiers/backer/badge.svg?label=backers&color=brightgreen)](https://opencollective.com/open_stt)
 [![Sponsors](https://opencollective.com/open_stt/tiers/sponsor/badge.svg?label=sponsors&color=brightgreen)](https://opencollective.com/open_stt)
-
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![Mailing list : test](https://img.shields.io/badge/Contact-Authors-blue.svg)](mailto:open_stt@googlegroups.com)
+
 
 # **Russian Open Speech To Text (STT/ASR) Dataset**
 
@@ -82,16 +84,16 @@ This alignment was performed using Yuri's alignment tool.
 
 # **Updates**
 
-
-
 ## **_Update 2019-06-28_**
 
 **New train datasets added:**
+
   - 1,439 hours radio_2;
   - 1,104 hours public_youtube1120;
   - 291 hours public_youtube1120_hq;
 
 **New validation datasets added:**
+
   - 8 hours asr_calls_2_val;
   - 5 hours buriy_audiobooks_2_val;
   - 5 hours public_youtube700_val;
@@ -166,7 +168,6 @@ Meta data [file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_meta_dat
 | buriy_audiobooks_2_val                      | 1  | 0.15            | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)  |  [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/buriy_audiobooks_2_val_mp3.tar.gz)    | Books + manual | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/buriy_audiobooks_2_val.csv) |
 | public_youtube700_val                      | 2  | 0.13            | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)  |  [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700_val_mp3.tar.gz)    | YouTube videos + manual  | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700_val.csv) |
 | Total                                 | 855  | 87.5            |      | | | |
-
 
 
 ## **Download instructions**
