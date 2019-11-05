@@ -35,7 +35,6 @@ Let's make STT in Russian (and more) as open and available as CV models.
     - [Via torrent](https://github.com/snakers4/open_stt/#via-torrent)
     - [Links](https://github.com/snakers4/open_stt/#links)
     - [Download-instructions](https://github.com/snakers4/open_stt/#download-instructions)
-    - [Check md5sum](https://github.com/snakers4/open_stt/#check-md5sum)
     - [End-to-end download scripts](https://github.com/snakers4/open_stt/#end-to-end-download-scripts)
   - [Annotation methodology](https://github.com/snakers4/open_stt/#annotation-methodology)
   - [Audio normalization](https://github.com/snakers4/open_stt/#audio-normalization)
