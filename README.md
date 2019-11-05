@@ -10,32 +10,26 @@
 # **Russian Open Speech To Text (STT/ASR) Dataset**
 
 Arguably the largest public Russian STT dataset up to date:
-- ~7m utterances (1-2m with less perfect annotation, see [#7](https://github.com/snakers4/open_stt/issues/7));
-- ~7000 hours;
-- 855 GB (in `.wav` format in `int16`);
-- (**new!**) A new domain - radio;
-- (**new!**) A larger YouTube dataset with 1000+ additional hours;
-- (**new!**) A small (300 hours) YouTube dataset downloaded in maximum quality;
-- (**new!**) 18 hours in 3 validation sets for YouTube / books / public calls with **ground truth annotation**;
-
+- ~16m utterances (1-2m with less perfect annotation, see [#7](https://github.com/snakers4/open_stt/issues/7));
+- ~20 000 hours;
+- 2,3 TB (in `.wav` format in `int16`);
+- (**new!**) A new domain - public speech;
+- (**new!**) A huge Radio dataset update with **10 000+ hours**;
 
 Prove [us](mailto:open_stt@googlegroups.com) wrong!
 Open issues, collaborate, submit a PR, contribute, share your datasets!
 Let's make STT in Russian (and more) as open and available as CV models.
 
 **Planned releases:**
-- 1000-10,000 additional hours of books;
-- Data quality distillation and improvement / annotation improvement;
-- EVEN MOAR DATA (give us your ideas where to find it!);
-- ~~1000+ additional hours of YouTube~~;
-- ~~Some validation / test sets~~;
-- ~~Plain benchmarks, "bad files"~~;
-- ~~Mp3 torrent~~;
-- ~~Wav torrent~~;
-- ~~Radio set~~
-- ... and more!;
 
-**Table of contents**
+- Refine and publish speaker labels, probably add speakers for old datasets;
+- Improve / re-upload some of the existing datasets, refine the STT labels;
+- Probably add new languages;
+- Add pre-trained models;
+
+# **Table of contents**
+
+
   - [Dataset composition](https://github.com/snakers4/open_stt/#dataset-composition)
   - [Downloads](https://github.com/snakers4/open_stt/#downloads)
     - [Via torrent](https://github.com/snakers4/open_stt/#via-torrent)
@@ -57,25 +51,25 @@ Let's make STT in Russian (and more) as open and available as CV models.
 
 | Dataset                   | Utterances | Hours | GB  | Av s/chars | Comment          | Annotation  | Quality/noise |
 |---------------------------|------------|-------|-----|------------|------------------|-------------|---------------|
+| radio_v4                   | 7,603,192  | 10,430 | 1,195 | 4.94s / 68 | Radio            | Alignment (*)| 95%  / crisp |
+| public_speech             | 1,700,060  | 2,709 | 301 | 5,73s / 79 | Public speech    | Alignment (*)| 95%  / crisp |
 | audiobook_2               | 1,149,404  | 1,511 | 162 | 4.7s / 56  | Books            | Alignment (*)| 95%  / crisp  |
 | radio_2                   |   651,645  | 1,439 | 154 | 7.95s / 110 | Radio            | Alignment (*)|  TBC, should be high            |
-| public_youtube1120        |  1,410,979 | 1,104 | 237 | 2.82s / 34 | Yutube videos    | Subtitles   | 95%  / ~crisp |
+| public_youtube1120        |  1,410,979 | 1,104 | 237 | 2.82s / 34 | Youtube videos    | Subtitles   | 95%  / ~crisp |
 | public_youtube700         |   759,483  |   701 |  75 | 3.3s / 43  | Youtube videos   | Subtitles   | 95%  / ~crisp |
 | tts_russian_addresses     | 1,741,838  |   754 |  81 | 1.6s / 20  | Russian addresses| TTS 4 voices| 100% / crisp  |
 | asr_public_phone_calls_2  |   603,797  |   601 |  66 | 3.6s / 37  | Phone calls      | ASR         | 70%  / noisy  |
 | public_youtube1120_hq     |   369,245  |   291 |  31 | 2.84s / 37 | YouTube videos HQ sound | Subtitles   | 95%  / ~crisp |
 | asr_public_phone_calls_1  |   233,868  |   211 |  23 | 3.3s / 29  | Phone calls      | ASR         | 70%  / noisy  |
+| radio_v4_add              |    92,679  |   157 | 18  | 6.1s / 80  | Radio            | Alignment (*)| 95%  / crisp |
 | asr_public_stories_2      |    78,186  |    78 |   9 | 3.5s / 43  | Books            | ASR         | 80%  / crisp  |
 | asr_public_stories_1      |    46,142  |    38 |   4 | 3.0s / 30  | Books            | ASR         | 80%  / crisp  |
 | public_series_1           |    20,243  |    17 |   2 | 3.1s / 38  | Youtube videos   | Subtitles   | 95%  / ~crisp |
-| ru_RU                     |     5,826  |    17 |   2 | 11s  / 12  | Public dataset   | Alignment   | 99%  / crisp  |
-| voxforge_ru               |     8,344  |    17 |   2 | 7.5s / 77  | Public dataset   | Reading     | 100% / crisp  |
-| russian_single            |     3,357  |     9 |   1 | 9.3s / 102 | Public dataset   | Alignment   | 99%  / crisp  |
 | asr_calls_2_val           |     12,950 |   7,7 |   2 | 2.15s / 34 | Phone calls      | Manual annotation | 99%  / crisp |
 | public_lecture_1          |     6,803  |     6 |   1 | 3.4s / 47  | Lectures         | Subtitles   | 95%  / crisp  |
 | buriy_audiobooks_2_val    |     7,850  |   4,9 |   1 | 2.25s / 31 | Books            | Manual annotation | 99%  / crisp |
 | public_youtube700_val     |     7,311  |   4,5 |   1 | 2.2 / 35   | Youtube videos   | Manual annotation | 99%  / crisp |
-| Total                     | 7,117,271‬  | 6,812 | 855 |            |                  |             |               |
+| Total                     | 16,513,202‬  | 20,108 | 2,369 |            |                  |             |               |
 
 **(*) Automatic alignment**
 
@@ -84,26 +78,35 @@ This alignment was performed using Yuri's alignment tool.
 
 # **Updates**
 
-## **_Update 2019-06-28_**
+## **_Update 2019-11-04_**
 
 **New train datasets added:**
 
-  - 1,439 hours radio_2;
-  - 1,104 hours public_youtube1120;
-  - 291 hours public_youtube1120_hq;
-
-**New validation datasets added:**
-
-  - 8 hours asr_calls_2_val;
-  - 5 hours buriy_audiobooks_2_val;
-  - 5 hours public_youtube700_val;
-
-## **_Update 2019-05-19_**
-
-Also shared a wav version via torrent.
-
+  - 10,430 hours radio_v4;
+  - 2,709 hours public_speech;
+  - 154 hours radio_v4_add;
+  - 5% sample of all new datasets with annotation.
+  
 <details>
   <summary>Click to expand</summary>
+  
+  ## **_Update 2019-06-28_**
+
+  **New train datasets added:**
+
+    - 1,439 hours radio_2;
+    - 1,104 hours public_youtube1120;
+    - 291 hours public_youtube1120_hq;
+
+  **New validation datasets added:**
+
+    - 8 hours asr_calls_2_val;
+    - 5 hours buriy_audiobooks_2_val;
+    - 5 hours public_youtube700_val;
+
+  ## **_Update 2019-05-19_**
+
+  Also shared a wav version via torrent.
 
   ## **_Update 2019-05-13_**
 
@@ -137,41 +140,46 @@ Also shared a wav version via torrent.
 ## **Via torrent**
 
 Save us a couple of bucks, download via torrent:
-- An **MP3** [version](http://academictorrents.com/details/4a2656878dc819354ba59cd29b1c01182ca0e162) of the dataset (v3), to be updated;
-- A **WAV** [version](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2) of the dataset (v5);
+- ~~An **MP3** [version](http://academictorrents.com/details/4a2656878dc819354ba59cd29b1c01182ca0e162) of the dataset (v3)~~ not supported anymore;
+- A **WAV** [version](https://academictorrents.com/details/a7929f1d8108a2a6ba2785f67d722423f088e6ba) of the dataset (v5);
 
 You can download separate files via torrent.
 Try several torrent clients if some do not work.
 
 ## **Links**
+All **WAV** files can be downloaded ONLY via [torrent](https://academictorrents.com/details/a7929f1d8108a2a6ba2785f67d722423f088e6ba)
 
-Meta data [file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_meta_data_v04_fx.csv).
-
-| Dataset                               | GB, wav | GB, mp3 | Wav   | Mp3 |  Source | Manifest  |
-|---------------------------------------|------|----------------|-------|-----|  -------| ----------|
-| audiobook_2                           | 162  | 21.0          | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/private_buriy_audiobooks_2_mp3.tar.gz) | Sources from the Internet + alignment | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/private_buriy_audiobooks_2.csv) |
-| radio_2                               | 154  | 25.7          | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/radio_2_mp3.tar.gz) | Radio | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/radio_2.csv) |
-| public_youtube1120                               | 237  | 32.4          | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120_mp3.tar.gz) | YouTube videos | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120.csv) |
-| asr_public_phone_calls_2              | 66   | 7.5           | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2_mp3.tar.gz) | Sources from the Internet + ASR | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2.csv) |
-| public_youtube1120_hq                               | 31  | 8.6          | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)  | [parе1](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120_hq_mp3.tar.gz) | YouTube videos | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120_hq.csv) |
-| asr_public_stories_2                  | 9   | 1.1              | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)   | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2_mp3.tar.gz)  | Sources from the Internet + alignment | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2.csv) |
-| tts_russian_addresses_rhvoice_4voices | 80.9 | 9.9           | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices_mp3.tar.gz) | TTS | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.csv) |
-| public_youtube700                     | 75.0 | 9.6           | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700_mp3.tar.gz)   | YouTube videos | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700.csv) |
-| asr_public_phone_calls_1              | 22.7 | 2.6           | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_1_mp3.tar.gz)    | Sources from the Internet + ASR | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_1.csv) |
-| asr_public_stories_1                  | 4.1  | 0.5            | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)  | [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_1_mp3.tar.gz)    | Public stories | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_1.csv) |
-| public_series_1                       | 1.9  | 0.2            | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)  |  [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/public_series_1_mp3.tar.gz)    | Public series | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_series_1.csv) |
-| ru_RU                                 | 1.9  | 0.2            | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)  |   [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/ru_ru_mp3.tar.gz)    | Caito.de [dataset](https://www.caito.de/data/Training/stt_tts/) | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/ru_RU.csv) |
-| voxforge_ru                           | 1.9  | 0.2            | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)  |  [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/voxforge_ru_mp3.tar.gz)    | Voxforge  [dataset](https://www.repository.voxforge1.org/downloads/) | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/voxforge_ru.csv) |
-| russian_single                        | 0.9  | 0.1            | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)  |  [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/russian_single_mp3.tar.gz)    | Russian single speaker [dataset](https://www.kaggle.com/bryanpark/russian-single-speaker-speech-dataset) | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/russian_single.csv) |
-| asr_calls_2_val                      | 2  | 0.2            | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)  |  [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_calls_2_val_mp3.tar.gz)    | Sources from the Internet  | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_calls_2_val.csv) |
-| public_lecture_1                      | 0.7  | 0.1            | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)  |  [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/public_lecture_1_mp3.tar.gz)    | Sources from the Internet + manual  | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_lecture_1.csv) |
-| buriy_audiobooks_2_val                      | 1  | 0.15            | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)  |  [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/buriy_audiobooks_2_val_mp3.tar.gz)    | Books + manual | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/buriy_audiobooks_2_val.csv) |
-| public_youtube700_val                      | 2  | 0.13            | [torrent](http://academictorrents.com/details/a12a08b39cf3626407e10e01126cf27c198446c2)  |  [part1](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700_val_mp3.tar.gz)    | YouTube videos + manual  | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700_val.csv) |
-| Total                                 | 855  | 87.5            |      | | | |
+| Dataset                               | GB, wav | GB, mp3 |  Mp3 |  Source | Manifest  |
+|---------------------------------------|------|----------------|-----|  -------| ----------|
+| radio_v4                              | 1059 | 263            | [link](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/radio_v4_mp3.tar.gz),[labels](https://forms.gle/nosMaNgj8MWKm99d9) | Radio | [link](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/radio_v4_manifest.csv) |
+| public_speech                         | 257  | 38.5            | [link](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/public_speech_mp3.tar.gz),[labels](https://forms.gle/nosMaNgj8MWKm99d9) | Sources from the Internet + alignment | [link](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/public_speech_manifest.csv) |
+| radio_v4_add                          | 15.7  | 2.2             | [link](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/radio_v4_add_mp3.tar.gz),[labels](https://forms.gle/nosMaNgj8MWKm99d9) | Radio | [link](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/radio_v4_add_manifest.csv) |
+| 5% of radio_v4 + public_speech        | -    | 15.3            | [link](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/radio_pspeech_sample_mp3.tar.gz) | - | [link](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/radio_pspeech_sample_manifest.csv) |
+| audiobook_2                           | 162  | 21.0          | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/private_buriy_audiobooks_2_mp3.tar.gz) | Sources from the Internet + alignment | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/private_buriy_audiobooks_2.csv) |
+| radio_2                               | 154  | 25.7          | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/radio_2_mp3.tar.gz) | Radio | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/radio_2.csv) |
+| public_youtube1120                               | 237  | 32.4   | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120_mp3.tar.gz) | YouTube videos | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120.csv) |
+| asr_public_phone_calls_2              | 66   | 7.5           | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2_mp3.tar.gz) | Sources from the Internet + ASR | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2.csv) |
+| public_youtube1120_hq                               | 31  | 8.6          | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120_hq_mp3.tar.gz) | YouTube videos | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120_hq.csv) |
+| asr_public_stories_2                  | 9   | 1.1              | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2_mp3.tar.gz)  | Sources from the Internet + alignment | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2.csv) |
+| tts_russian_addresses_rhvoice_4voices | 80.9 | 9.9           | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices_mp3.tar.gz) | TTS | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.csv) |
+| public_youtube700                     | 75.0 | 9.6           | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700_mp3.tar.gz)   | YouTube videos | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700.csv) |
+| asr_public_phone_calls_1              | 22.7 | 2.6           | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_1_mp3.tar.gz)    | Sources from the Internet + ASR | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_1.csv) |
+| asr_public_stories_1                  | 4.1  | 0.5            | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_1_mp3.tar.gz)    | Public stories | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_1.csv) |
+| public_series_1                       | 1.9  | 0.2            |  [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_series_1_mp3.tar.gz)    | Public series | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_series_1.csv) |
+| asr_calls_2_val                      | 2  | 0.2            | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_calls_2_val_mp3.tar.gz)    | Sources from the Internet  | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_calls_2_val.csv) |
+| public_lecture_1                      | 0.7  | 0.1            | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_lecture_1_mp3.tar.gz)    | Sources from the Internet + manual  | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_lecture_1.csv) |
+| buriy_audiobooks_2_val                      | 1  | 0.15            | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/buriy_audiobooks_2_val_mp3.tar.gz)    | Books + manual | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/buriy_audiobooks_2_val.csv) |
+| public_youtube700_val                      | 2  | 0.13            | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700_val_mp3.tar.gz)    | YouTube videos + manual  | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700_val.csv) |
+| Total                                 | 2,186  | 391            |      | | | |
 
 
 ## **Download instructions**
+### End to end
+`download.sh` 
+or 
+`download.py` with this config [file](https://github.com/snakers4/open_stt/blob/master/md5sum.lst). Please check the config first.
 
+### Manually
 1. Download each dataset separately:
 
   Via `wget`
@@ -191,209 +199,6 @@ Meta data [file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_meta_dat
 
 2. Download the meta data and manifests for each dataset:
 3. Merge files (where applicable), unpack and enjoy!
-
-## **Check md5sum**
-
-Including links to deprecated files.
-`md5sum /path/to/downloaded/file`
-
-<details>
-  <summary>Click to expand</summary>
-  <table>
-    <tr>
-      <th>type</th>
-      <th>md5sum</th>
-      <th>file</th>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>f24e21c69c03062d667caf0f055244f2</td>
-      <td>asr_public_stories_2_mp3.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>a6f888c53d7cbded85ab51627ef57c96</td>
-      <td>asr_public_phone_calls_1_mp3.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>f707e34f488c62af2e3142085ff595ad</td>
-      <td>asr_public_phone_calls_2_mp3.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>baa491ed0b526b2a989b8c4a8897429d</td>
-      <td>asr_public_stories_1_mp3.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>42b9c8c2e31100d6c5b972c9ac000167</td>
-      <td>private_buriy_audiobooks_2_mp3.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>7a5704721012fafa115e7316e5f6e058</td>
-      <td>public_lecture_1_mp3.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>16cf820330f9f8b388395d777b2331ac</td>
-      <td>public_series_1_mp3.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>dd048e7110c0c852c353759dad8fec0f</td>
-      <td>public_youtube700_mp3.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>579e9d98bd159a27d3573641edee69b0</td>
-      <td>ru_ru_mp3.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>177b041594684623ec7d038613e1330d</td>
-      <td>russian_single_mp3.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>d7ce4c4116dcc655be2b466f82c98b6e</td>
-      <td>tts_russian_addresses_rhvoice_4voices_mp3.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>25ea6d9e249a242ecc217acc28c8077b</td>
-      <td>voxforge_ru_mp3.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>97cd6b56ba1eb5088bc5643dce054028</td>
-      <td>asr_calls_2_val_mp3.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>69a465e218fc1f597f7b5da836952d9d</td>
-      <td>radio_2_mp3.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>0cc0f50db85ec4271696b4eb03a2203c</td>
-      <td>buriy_audiobooks_2_val_mp3.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>f5d2e3d13b47e1566ba0b021f00788cf</td>
-      <td>public_youtube1120_hq_mp3.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>12eb78a9ab7c3d39bbe2842b8d6550ca</td>
-      <td>public_youtube1120_mp3.tar.gz</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>f6b6034e1e91d9a0a5069fc9ad2ed545</td>
-      <td>public_youtube700_val_mp3.tar.gz</td>
-    </tr>
-    <tr>
-      <td>manifest</td>
-      <td>b0ce7564ba90b121aeb13aada73a6e30</td>
-      <td>asr_public_phone_calls_1.csv</td>
-    </tr>
-    <tr>
-      <td>manifest</td>
-      <td>6867d14dfdec1f9e9b8ca2f1de9ceda6</td>
-      <td>asr_public_phone_calls_2.csv</td>
-    </tr>
-    <tr>
-      <td>manifest</td>
-      <td>0bdd77e15172e654d9a1999a86e92c7f</td>
-      <td>asr_public_stories_1.csv</td>
-    </tr>
-    <tr>
-      <td>manifest</td>
-      <td>f388013039d94dc36970547944db51c7</td>
-      <td>asr_public_stories_2.csv</td>
-    </tr>
-    <tr>
-      <td>manifest</td>
-      <td>3b67e27c1429593cccbf7c516c4b582d</td>
-      <td>private_buriy_audiobooks_2.csv</td>
-    </tr>
-    <tr>
-      <td>manifest</td>
-      <td>04027c20eb3aff05f6067957ecff856b</td>
-      <td>public_lecture_1.csv</td>
-    </tr>
-    <tr>
-      <td>manifest</td>
-      <td>89da3f1b6afcd4d4936662ceabf3033e</td>
-      <td>public_series_1.csv</td>
-    </tr>
-    <tr>
-      <td>manifest</td>
-      <td>a81dfb018c88d0ecd5194ab3d8ff6c95</td>
-      <td>public_youtube700.csv</td>
-    </tr>
-    <tr>
-      <td>manifest</td>
-      <td>c858f020729c34ba0ab525bbb8950d0c</td>
-      <td>ru_RU.csv</td>
-    </tr>
-    <tr>
-      <td>manifest</td>
-      <td>0275525914825dec663fd53390fdc9a0</td>
-      <td>russian_single.csv</td>
-    </tr>
-    <tr>
-      <td>manifest</td>
-      <td>52f406f4e30fcc8c634f992befd91beb</td>
-      <td>tts_russian_addresses_rhvoice_4voices.csv</td>
-    </tr>
-    <tr>
-      <td>audio</td>
-      <td>7533581bb26975212817bcacb25546d0</td>
-      <td>asr_public_stories_2.tar.gz</td>
-    </tr>
-    <tr>
-      <td>manifest</td>
-      <td>0cdbd085ffa6dab4bfdce7c3ed31fcfe</td>
-      <td>asr_calls_2_val.csv</td>
-    </tr>
-    <tr>
-      <td>manifest</td>
-      <td>4e0b73e0d00374482a0f2286acf314a0</td>
-      <td>buriy_audiobooks_2_val.csv</td>
-    </tr>
-    <tr>
-      <td>manifest</td>
-      <td>6b9ce6828a55d2741d51bc3503345db5</td>
-      <td>public_youtube1120.csv</td>
-    </tr>
-    <tr>
-      <td>manifest</td>
-      <td>33040a25cad99e70a81e9e54ff8c758e</td>
-      <td>public_youtube1120_hq.csv</td>
-    </tr>
-    <tr>
-      <td>manifest</td>
-      <td>525bd20802e529dcabf9e44345a50d0b</td>
-      <td>public_youtube700_val.csv</td>
-    </tr>
-    <tr>
-      <td>manifest</td>
-      <td>2996fe938cdfb37dc6e359e4384c9bfe</td>
-      <td>radio_2.csv</td>
-    </tr>
-  </table>
-</details>
-
-
-## **End to end download scripts**
-
-You can use this [script](https://github.com/snakers4/open_stt/blob/master/download.sh) or this [script](https://github.com/snakers4/open_stt/blob/master/download.py) with this config [file](https://github.com/snakers4/open_stt/blob/master/md5sum.lst).
-Please check the config first.
-You can also [contribute](https://github.com/snakers4/open_stt/issues/2) a similar script in python.
 
 # **Annotation methodology**
 
@@ -490,7 +295,7 @@ Kudos!
 
 #### **Encoding**
 
-Mostly we used `pydub` (via ffmpeg) to convert to MP3.
+Mostly we used `pydub` (via ffmpeg) or `sox` (much much faster way) to convert to MP3.
 We omitted blank files (YouTube mostly).
 We used the following parameters:
 - 16kHz;
@@ -501,7 +306,7 @@ Usually 128-192 kbps is enough for music with sr of 44 kHz, 64-96 is enough for 
 But here we have mono, 16 kHz and usually only one speaker. So 32 kbps was a good choice.
 We did not use other formats like `.ogg`, because `.mp3` is much more popular.
 
-<details><summary>See example</summary>
+<details><summary>See example `pydub`</summary>
 <p>
 
 ```python
@@ -518,6 +323,24 @@ file_handle = sound.export(store_mp3_path,
 
 </p>
 </details>
+<details><summary>See example `sox`</summary>
+<p>
+
+```python
+import subprocess
+cmd = 'sox "{}" -C 32.01 -c 1 "{}"'.format(
+            wav_path,
+            store_mp3_path)
+    
+res = subprocess.call([cmd], shell=True)
+
+if res != 0:
+    print('Problems with {}'.format(wav_path))
+```
+
+</p>
+</details>
+
 
 #### **Decoding**
 
@@ -583,9 +406,11 @@ wav_path = save_wav_diskdb(wav,
 </p>
 </details>
 
-#### **Why not OGG**
+#### **Why not OGG/ Opus**
 
-Even though OGG is considered to be better for speech with higher compression, we opted for a more conventional well known format.
+Even though OGG / Opus is considered to be better for speech with higher compression, we opted for a more conventional well known format.
+
+Also LPC net codec boasts ultra-low bitrate speech compression as well. But we decided to opt for a more familiar format to avoid worry about actually losing signal in compression.
 
 ## **1. Issues with reading files**
 
@@ -621,17 +446,14 @@ TTS does not enjoy the same attention by ML community because it is data hungry 
 Ultimately it leads to worse-off situation for the general community.
 
 ## **3. Known issues with the dataset to be fixed**
-- ~~Blank files in Youtube dataset~~. Removed in mp3 archive. Meta-data not cleaned;
-- Some files that have low values / crash with tochaudio;
-- Looks like scipy does not always write meta-data when saving wavs (or you should save (N,1) shaped file) - this can be fixed as shown above;
+- Speaker labels coming soon;
+- Validation sets for new domains: Radio/Public Speech will be added in next releases.
 
 # **License**
-License:
-- cc-by-nc and commercial usage available after agreement with dataset authors;
-- Except for radio_2, which is public domain;
-- Except for VoxForge, its license is GNU GPL 3.0;
-- Except for Caito.de dataset, its licence is [here](https://www.caito.de/data/Training/LICENSE.txt).
+![сс-nc-by-license](https://static.wixstatic.com/media/342407_05e016f9f44240429203c35dfc8df63b~mv2.png/v1/fill/w_563,h_200,al_c,lg_1,q_80/342407_05e016f9f44240429203c35dfc8df63b~mv2.webp)
+
+Сc-by-nc and commercial usage available after agreement with dataset authors.
 
 # **Donations**
 
-[Donate](https://buymeacoff.ee/8oneCIN) (each coffee pays for several full downloads) / use our DO referral [link](https://sohabr.net/habr/post/357748/) to help.
+[Donate](https://buymeacoff.ee/8oneCIN) (each coffee pays for several full downloads) or via [open_collective](https://opencollective.com/open_stt) or just use our DO referral [link](https://sohabr.net/habr/post/357748/) to help.
