@@ -146,39 +146,42 @@ You can download separate files via torrent.
 Try several torrent clients if some do not work.
 
 ## **Links**
+
 All **WAV** files can be downloaded ONLY via [torrent](https://academictorrents.com/details/a7929f1d8108a2a6ba2785f67d722423f088e6ba)
 
 | Dataset                               | GB, wav | GB, mp3 |  Mp3 |  Source | Manifest  |
 |---------------------------------------|------|----------------|-----|  -------| ----------|
-| radio_v4                              | 1059 | 263            | [link](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/radio_v4_mp3.tar.gz),[labels](https://forms.gle/nosMaNgj8MWKm99d9) | Radio | [link](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/radio_v4_manifest.csv) |
-| public_speech                         | 257  | 38.5            | [link](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/public_speech_mp3.tar.gz),[labels](https://forms.gle/nosMaNgj8MWKm99d9) | Sources from the Internet + alignment | [link](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/public_speech_manifest.csv) |
-| radio_v4_add                          | 15.7  | 2.2             | [link](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/radio_v4_add_mp3.tar.gz),[labels](https://forms.gle/nosMaNgj8MWKm99d9) | Radio | [link](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/radio_v4_add_manifest.csv) |
-| 5% of radio_v4 + public_speech        | -    | 15.3            | [link](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/radio_pspeech_sample_mp3.tar.gz) | - | [link](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/radio_pspeech_sample_manifest.csv) |
-| audiobook_2                           | 162  | 21.0          | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/private_buriy_audiobooks_2_mp3.tar.gz) | Sources from the Internet + alignment | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/private_buriy_audiobooks_2.csv) |
-| radio_2                               | 154  | 25.7          | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/radio_2_mp3.tar.gz) | Radio | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/radio_2.csv) |
-| public_youtube1120                               | 237  | 32.4   | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120_mp3.tar.gz) | YouTube videos | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120.csv) |
-| asr_public_phone_calls_2              | 66   | 7.5           | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2_mp3.tar.gz) | Sources from the Internet + ASR | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2.csv) |
-| public_youtube1120_hq                               | 31  | 8.6          | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120_hq_mp3.tar.gz) | YouTube videos | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120_hq.csv) |
-| asr_public_stories_2                  | 9   | 1.1              | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2_mp3.tar.gz)  | Sources from the Internet + alignment | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2.csv) |
-| tts_russian_addresses_rhvoice_4voices | 80.9 | 9.9           | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices_mp3.tar.gz) | TTS | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.csv) |
-| public_youtube700                     | 75.0 | 9.6           | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700_mp3.tar.gz)   | YouTube videos | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700.csv) |
-| asr_public_phone_calls_1              | 22.7 | 2.6           | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_1_mp3.tar.gz)    | Sources from the Internet + ASR | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_1.csv) |
-| asr_public_stories_1                  | 4.1  | 0.5            | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_1_mp3.tar.gz)    | Public stories | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_1.csv) |
-| public_series_1                       | 1.9  | 0.2            |  [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_series_1_mp3.tar.gz)    | Public series | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_series_1.csv) |
-| asr_calls_2_val                      | 2  | 0.2            | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_calls_2_val_mp3.tar.gz)    | Sources from the Internet  | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_calls_2_val.csv) |
-| public_lecture_1                      | 0.7  | 0.1            | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_lecture_1_mp3.tar.gz)    | Sources from the Internet + manual  | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_lecture_1.csv) |
-| buriy_audiobooks_2_val                      | 1  | 0.15            | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/buriy_audiobooks_2_val_mp3.tar.gz)    | Books + manual | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/buriy_audiobooks_2_val.csv) |
-| public_youtube700_val                      | 2  | 0.13            | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700_val_mp3.tar.gz)    | YouTube videos + manual  | [link](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700_val.csv) |
+| radio_v4                              | 1059 | 263            | [mp3](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/radio_v4_mp3.tar.gz), [txt](https://forms.gle/nosMaNgj8MWKm99d9) | Radio | [manifest file](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/radio_v4_manifest.csv) |
+| public_speech                         | 257  | 38.5            | [mp3](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/public_speech_mp3.tar.gz), [txt](https://forms.gle/nosMaNgj8MWKm99d9) | Sources from the Internet + alignment | [manifest file](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/public_speech_manifest.csv) |
+| radio_v4_add                          | 15.7  | 2.2             | [mp3](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/radio_v4_add_mp3.tar.gz), [txt](https://forms.gle/nosMaNgj8MWKm99d9) | Radio | [manifest file](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/radio_v4_add_manifest.csv) |
+| 5% of radio_v4 + public_speech        | -    | 15.3            | [mp3+txt](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/radio_pspeech_sample_mp3.tar.gz) | - | [manifest file](https://ru-open-stt.ams3.cdn.digitaloceanspaces.com/radio_pspeech_sample_manifest.csv) |
+| audiobook_2                           | 162  | 21.0          | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/private_buriy_audiobooks_2_mp3.tar.gz) | Sources from the Internet + alignment | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/private_buriy_audiobooks_2.csv) |
+| radio_2                               | 154  | 25.7          | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/radio_2_mp3.tar.gz) | Radio | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/radio_2.csv) |
+| public_youtube1120                               | 237  | 32.4   | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120_mp3.tar.gz) | YouTube videos | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120.csv) |
+| asr_public_phone_calls_2              | 66   | 7.5           | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2_mp3.tar.gz) | Sources from the Internet + ASR | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2.csv) |
+| public_youtube1120_hq                               | 31  | 8.6          | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120_hq_mp3.tar.gz) | YouTube videos | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120_hq.csv) |
+| asr_public_stories_2                  | 9   | 1.1              | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2_mp3.tar.gz)  | Sources from the Internet + alignment | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2.csv) |
+| tts_russian_addresses_rhvoice_4voices | 80.9 | 9.9           | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices_mp3.tar.gz) | TTS | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.csv) |
+| public_youtube700                     | 75.0 | 9.6           | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700_mp3.tar.gz)   | YouTube videos | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700.csv) |
+| asr_public_phone_calls_1              | 22.7 | 2.6           | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_1_mp3.tar.gz)    | Sources from the Internet + ASR | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_1.csv) |
+| asr_public_stories_1                  | 4.1  | 0.5            | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_1_mp3.tar.gz)    | Public stories | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_1.csv) |
+| public_series_1                       | 1.9  | 0.2            |  [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/public_series_1_mp3.tar.gz)    | Public series | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_series_1.csv) |
+| asr_calls_2_val                      | 2  | 0.2            | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_calls_2_val_mp3.tar.gz)    | Sources from the Internet  | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_calls_2_val.csv) |
+| public_lecture_1                      | 0.7  | 0.1            | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/public_lecture_1_mp3.tar.gz)    | Sources from the Internet + manual  | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_lecture_1.csv) |
+| buriy_audiobooks_2_val                      | 1  | 0.15            | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/buriy_audiobooks_2_val_mp3.tar.gz)    | Books + manual | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/buriy_audiobooks_2_val.csv) |
+| public_youtube700_val                      | 2  | 0.13            | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700_val_mp3.tar.gz)    | YouTube videos + manual  | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700_val.csv) |
 | Total                                 | 2,186  | 391            |      | | | |
 
-
 ## **Download instructions**
+
 ### End to end
+
 `download.sh` 
 or 
 `download.py` with this config [file](https://github.com/snakers4/open_stt/blob/master/md5sum.lst). Please check the config first.
 
 ### Manually
+
 1. Download each dataset separately:
 
   Via `wget`
@@ -203,7 +206,6 @@ or
 
 The dataset is compiled using open domain sources.
 Some audio types are annotated automatically and verified statistically / using heuristics.
-
 
 # **Audio normalization**
 
@@ -234,6 +236,7 @@ store_path = Path(root_folder,
 Use helper functions from here for easier work with manifest files.
 
 #### **Read manifests**
+
 <details><summary>See example</summary>
 <p>
 
@@ -247,6 +250,7 @@ manifest_df = read_manifest('path/to/manifest.csv')
 </details>
 
 #### **Merge, check and save manifests**
+
 <details><summary>See example</summary>
 <p>
 
@@ -274,6 +278,7 @@ save_manifest(train_manifest,
 Please contact us [here](mailto:open_stt@googlegroups.com) or just create a GitHub issue!
 
 **Authors (in alphabetic order):**
+
 - Anna Slizhikova;
 - Alexander Veysov;
 - Diliara Nurtdinova;
@@ -414,6 +419,7 @@ Also LPC net codec boasts ultra-low bitrate speech compression as well. But we d
 ## **1. Issues with reading files**
 
 #### **Maybe try this approach:**
+
 <details><summary>See example</summary>
 <p>
 
@@ -445,10 +451,12 @@ TTS does not enjoy the same attention by ML community because it is data hungry 
 Ultimately it leads to worse-off situation for the general community.
 
 ## **3. Known issues with the dataset to be fixed**
+
 - Speaker labels coming soon;
 - Validation sets for new domains: Radio/Public Speech will be added in next releases.
 
 # **License**
+
 ![сс-nc-by-license](https://static.wixstatic.com/media/342407_05e016f9f44240429203c35dfc8df63b~mv2.png/v1/fill/w_563,h_200,al_c,lg_1,q_80/342407_05e016f9f44240429203c35dfc8df63b~mv2.webp)
 
 Сc-by-nc and commercial usage available after agreement with dataset authors.
