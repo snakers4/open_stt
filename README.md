@@ -143,7 +143,23 @@ Save us a couple of bucks, download via torrent:
 - A **WAV** [version](https://academictorrents.com/details/a7929f1d8108a2a6ba2785f67d722423f088e6ba) of the dataset (v5);
 
 You can download separate files via torrent.
-Try several torrent clients if some do not work.
+~~Try several torrent clients if some do not work.~~
+Looks like that due to large chunk size, most conversional torrent clients just fail silently.
+No problem (re-calculating the torrent takes much time, and some people have downloaded it already):
+
+```
+apt update
+apt install aria2
+# list the torrent files
+aria2c --show-files ru_open_stt_wav_v10.torrent
+# download only one file
+aria2c --select-file=4 ru_open_stt_wav_v10.torrent
+# for more options visit
+# https://aria2.github.io/manual/en/html/aria2c.html#basic-options
+# https://aria2.github.io/manual/en/html/aria2c.html#bittorrent-metalink-options
+# https://aria2.github.io/manual/en/html/aria2c.html#bittorrent-specific-options
+```
+If you are using Windows, you may use Linux subsystem to run these commands.
 
 ## **Links**
 
