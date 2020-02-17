@@ -77,6 +77,12 @@ This alignment was performed using Yuri's alignment tool.
 
 # **Updates**
 
+## **_Update 2020-02-07_**
+
+**Temporarily Deprecated Direct MP3 Links:
+
+- Please refer here for more [information](https://github.com/snakers4/open_stt/issues/12#issuecomment-586867040)
+
 ## **_Update 2019-11-04_**
 
 **New train datasets added:**
