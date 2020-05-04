@@ -6,15 +6,16 @@
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Mailing list : test](https://img.shields.io/badge/Contact-Authors-blue.svg)](mailto:open_stt@googlegroups.com)
 
-
 # **Russian Open Speech To Text (STT/ASR) Dataset**
 
 Arguably the largest public Russian STT dataset up to date:
 - ~16m utterances (1-2m with less perfect annotation, see [#7](https://github.com/snakers4/open_stt/issues/7));
 - ~20 000 hours;
-- 2,3 TB (in `.wav` format in `int16`);
+- 2,3 TB (in `.wav` format in `int16`), 356G in `.opus`;
 - (**new!**) A new domain - public speech;
 - (**new!**) A huge Radio dataset update with **10 000+ hours**;
+- (**new!**) Utils for working with OPUS;
+- (**Coming soon!**) New OPUS torrent, **unlimited direct links**;
 
 Prove [us](mailto:open_stt@googlegroups.com) wrong!
 Open issues, collaborate, submit a PR, contribute, share your datasets!
@@ -22,35 +23,33 @@ Let's make STT in Russian (and more) as open and available as CV models.
 
 **Planned releases:**
 
-- Refine and publish speaker labels, probably add speakers for old datasets;
-- Improve / re-upload some of the existing datasets, refine the STT labels;
-- Probably add new languages;
-- Add pre-trained models;
+- Working on a new project with 3 more languages, stay tuned!
 
 # **Table of contents**
 
-
-  - [Dataset composition](https://github.com/snakers4/open_stt/#dataset-composition)
-  - [Downloads](https://github.com/snakers4/open_stt/#downloads)
-    - [Via torrent](https://github.com/snakers4/open_stt/#via-torrent)
-    - [Links](https://github.com/snakers4/open_stt/#links)
-    - [Download-instructions](https://github.com/snakers4/open_stt/#download-instructions)
-    - [End-to-end download scripts](https://github.com/snakers4/open_stt/#end-to-end-download-scripts)
-  - [Annotation methodology](https://github.com/snakers4/open_stt/#annotation-methodology)
-  - [Audio normalization](https://github.com/snakers4/open_stt/#audio-normalization)
-  - [Disk db methodology](https://github.com/snakers4/open_stt/#on-disk-db-methodology)
-  - [Helper functions](https://github.com/snakers4/open_stt/#helper-functions)
-  - [Contacts](https://github.com/snakers4/open_stt/#contacts)
-  - [Acknowledgements](https://github.com/snakers4/open_stt/#acknowledgements)
-  - [FAQ](https://github.com/snakers4/open_stt/#faq)
-  - [License](https://github.com/snakers4/open_stt/#license)
-  - [Donations](https://github.com/snakers4/open_stt/#donations)
+- [Dataset composition](https://github.com/snakers4/open_stt/#dataset-composition)
+- [Downloads](https://github.com/snakers4/open_stt/#downloads)
+  - [Via torrent](https://github.com/snakers4/open_stt/#via-torrent)
+  - [Links](https://github.com/snakers4/open_stt/#links)
+  - [Download-instructions](https://github.com/snakers4/open_stt/#download-instructions)
+  - [End-to-end download scripts](https://github.com/snakers4/open_stt/#end-to-end-download-scripts)
+- [Annotation methodology](https://github.com/snakers4/open_stt/#annotation-methodology)
+- [Audio normalization](https://github.com/snakers4/open_stt/#audio-normalization)
+- [Disk db methodology](https://github.com/snakers4/open_stt/#on-disk-db-methodology)
+- [Helper functions](https://github.com/snakers4/open_stt/#helper-functions)
+- [How to open opus](https://github.com/snakers4/open_stt/#how-to-open-opus)
+- [Contacts](https://github.com/snakers4/open_stt/#contacts)
+- [Acknowledgements](https://github.com/snakers4/open_stt/#acknowledgements)
+- [FAQ](https://github.com/snakers4/open_stt/#faq)
+- [License](https://github.com/snakers4/open_stt/#license)
+- [Donations](https://github.com/snakers4/open_stt/#donations)
+- [Further reading](https://github.com/snakers4/open_stt/#further-reading)
 
 # **Dataset composition**
 
 | Dataset                   | Utterances | Hours | GB  | Av s/chars | Comment          | Annotation  | Quality/noise |
 |---------------------------|------------|-------|-----|------------|------------------|-------------|---------------|
-| radio_v4                   | 7,603,192  | 10,430 | 1,195 | 4.94s / 68 | Radio            | Alignment (*)| 95%  / crisp |
+| radio_v4                  | 7,603,192  | 10,430 | 1,195 | 4.94s / 68 | Radio            | Alignment (*)| 95%  / crisp |
 | public_speech             | 1,700,060  | 2,709 | 301 | 5,73s / 79 | Public speech    | Alignment (*)| 95%  / crisp |
 | audiobook_2               | 1,149,404  | 1,511 | 162 | 4.7s / 56  | Books            | Alignment (*)| 95%  / crisp  |
 | radio_2                   |   651,645  | 1,439 | 154 | 7.95s / 110 | Radio            | Alignment (*)|  TBC, should be high            |
@@ -77,6 +76,15 @@ This alignment was performed using Yuri's alignment tool.
 
 # **Updates**
 
+## **_Update 2020-05-04_**
+
+**Migration to OPUS**
+
+- Conversion of the whole dataset to OPUS
+- New OPUS torrent
+- Added OPUS helpers and build instructions
+- Coming soon - **new unlimited direct downloads**
+
 ## **_Update 2020-02-07_**
 
 **Temporarily Deprecated Direct MP3 Links:**
@@ -87,10 +95,10 @@ This alignment was performed using Yuri's alignment tool.
 
 **New train datasets added:**
 
-  - 10,430 hours radio_v4;
-  - 2,709 hours public_speech;
-  - 154 hours radio_v4_add;
-  - 5% sample of all new datasets with annotation.
+- 10,430 hours radio_v4;
+- 2,709 hours public_speech;
+- 154 hours radio_v4_add;
+- 5% sample of all new datasets with annotation.
   
 <details>
   <summary>Click to expand</summary>
@@ -144,16 +152,16 @@ This alignment was performed using Yuri's alignment tool.
 
 ## **Via torrent**
 
-Save us a couple of bucks, download via torrent:
-- ~~An **MP3** [version](http://academictorrents.com/details/4a2656878dc819354ba59cd29b1c01182ca0e162) of the dataset (v3)~~ not supported anymore;
-- A **WAV** [version](https://academictorrents.com/details/a7929f1d8108a2a6ba2785f67d722423f088e6ba) of the dataset (v5);
+- ~~An **MP3** [version](http://academictorrents.com/details/4a2656878dc819354ba59cd29b1c01182ca0e162) of the dataset (v3)~~ DEPRECATED;
+- ~~A **WAV** [version](https://academictorrents.com/details/a7929f1d8108a2a6ba2785f67d722423f088e6ba) of the dataset (v5)~~ DEPRECATED;
+- A **OPUS** [version](https://academictorrents.com/details/95b4cab0f99850e119114c8b6df00193ab5fa34f) of the dataset (v1.01);
 
 You can download separate files via torrent.
-~~Try several torrent clients if some do not work.~~
-Looks like that due to large chunk size, most conversional torrent clients just fail silently.
-No problem (re-calculating the torrent takes much time, and some people have downloaded it already):
 
-```
+Looks like that due to large chunk size, most conversional torrent clients just fail silently.
+No problem (re-calculating the torrent takes much time, and some people have downloaded it already), use `aria2c`:
+
+```bash
 apt update
 apt install aria2
 # list the torrent files
@@ -165,11 +173,16 @@ aria2c --select-file=4 ru_open_stt_wav_v10.torrent
 # https://aria2.github.io/manual/en/html/aria2c.html#bittorrent-metalink-options
 # https://aria2.github.io/manual/en/html/aria2c.html#bittorrent-specific-options
 ```
-If you are using Windows, you may use Linux subsystem to run these commands.
+
+If you are using Windows, you may use **Linux subsystem** to run these commands.
 
 ## **Links**
 
-All **WAV** files can be downloaded ONLY via [torrent](https://academictorrents.com/details/a7929f1d8108a2a6ba2785f67d722423f088e6ba)
+**Coming soon** - new direct OPUS links!
+
+All WAV or MP3 files / links / torrents to be superseded by OPUS.
+
+Total size of OPUS files is about 356G, so OPUS is ~10% smaller than MP3.
 
 | Dataset                               | GB, wav | GB, mp3 |  Mp3 |  Source | Manifest  |
 |---------------------------------------|------|----------------|-----|  -------| ----------|
@@ -198,8 +211,10 @@ All **WAV** files can be downloaded ONLY via [torrent](https://academictorrents.
 
 ### End to end
 
-`download.sh` 
-or 
+`download.sh`
+
+or
+
 `download.py` with this config [file](https://github.com/snakers4/open_stt/blob/master/md5sum.lst). Please check the config first.
 
 ### Manually
@@ -207,16 +222,19 @@ or
 1. Download each dataset separately:
 
   Via `wget`
+
   ```
   wget https://ru-open-stt.ams3.digitaloceanspaces.com/some_file
   ```
 
   For multi-threaded downloads use aria2 with `-x` flag, i.e.
+
   ```
   aria2c -c -x5 https://ru-open-stt.ams3.digitaloceanspaces.com/some_file
   ```
 
   If necessary, merge chunks like this:
+  
   ```
   cat ru_open_stt_v01.tar.gz_* > ru_open_stt_v01.tar.gz
   ```
@@ -276,7 +294,7 @@ manifest_df = read_manifest('path/to/manifest.csv')
 <details><summary>See example</summary>
 <p>
 
-```python
+```python3
 from utils.open_stt_utils import (plain_merge_manifests,
                                   check_files,
                                   save_manifest)
@@ -295,6 +313,45 @@ save_manifest(train_manifest,
 </p>
 </details>
 
+# **How to open opus**
+
+The best efficient way to read opus files in python (the we know of) that does incur any significant overhead (i.e. launching subprocesses, using a daisy chain of libraries with sox, FFMPEG etc) is to use pysoundfile (a python CFFI wrapper around libsoundfile).
+
+When this solution was being researched the community had been waiting for a major libsoundfile release for years. Opus support has been implemented some time ago upstream, but it has not been properly released. Therefore we opted for a custom build + monkey patching. 
+
+At the time when you read / use this - probably there will be decent / proper builds of libsndfile.
+
+## **Building libsoundfile**
+
+```bash
+apt-get update
+apt-get install cmake autoconf autogen automake build-essential libasound2-dev \
+libflac-dev libogg-dev libtool libvorbis-dev libopus-dev pkg-config -y
+
+cd /usr/local/lib
+git clone https://github.com/erikd/libsndfile.git
+cd libsndfile
+git reset --hard 49b7d61
+mkdir -p build && cd build
+
+cmake .. -DBUILD_SHARED_LIBS=ON
+make && make install
+cmake --build .
+```
+
+## **Patched pysound file wrapper**
+
+```python3
+import utils.soundfile_opus as sf
+
+path = 'path/to/file.opus`
+audio, sr = sf.read(path, dtype='int16')
+```
+
+## **Known issues**
+
+When you attempt writing large files (90-120s), there is an upstream bug in libsndfile that prevents writing such files with `opus` / `vorbis`. Most likely will be fixed by major libsndfile releases.
+
 # **Contacts**
 
 Please contact us [here](mailto:open_stt@googlegroups.com) or just create a GitHub issue!
@@ -310,6 +367,7 @@ Please contact us [here](mailto:open_stt@googlegroups.com) or just create a GitH
 # **Acknowledgements**
 
 This repo would not be possible without these people:
+
 - Many thanks for helping to encode the initial bulk of the data into mp3 to [akreal](https://nuget.pkg.github.com/akreal);
 - 18 hours of ground truth annotation datasets for validation are a courtesy of [activebc](https://activebc.ru/);
 
@@ -317,9 +375,9 @@ Kudos!
 
 # **FAQ**
 
-## **0. ~~Why not MP3?~~ MP3 encoding / decoding**
+## **0. ~~Why not MP3?~~ MP3 encoding / decoding** - DEPRECATED
 
-#### **Encoding**
+### **Encoding**
 
 Mostly we used `pydub` (via ffmpeg) or `sox` (much much faster way) to convert to MP3.
 We omitted blank files (YouTube mostly).
@@ -367,8 +425,7 @@ if res != 0:
 </p>
 </details>
 
-
-#### **Decoding**
+### **Decoding**
 
 It is up to you, but to save space and spare CPU during training, I would suggest the following pipeline to extract the files:
 
@@ -432,7 +489,7 @@ wav_path = save_wav_diskdb(wav,
 </p>
 </details>
 
-#### **Why not OGG/ Opus**
+#### **Why not OGG/ Opus** - DEPRECATED
 
 Even though OGG / Opus is considered to be better for speech with higher compression, we opted for a more conventional well known format.
 
@@ -440,7 +497,7 @@ Also LPC net codec boasts ultra-low bitrate speech compression as well. But we d
 
 ## **1. Issues with reading files**
 
-#### **Maybe try this approach:**
+### **Maybe try this approach:**
 
 <details><summary>See example</summary>
 <p>
@@ -461,15 +518,16 @@ if abs_max>0:
 
 ## **2. Why share such dataset?**
 
-We are not altruists,  life just is **not a zero sum game**.
+We are not altruists, life just is **not a zero sum game**.
 
 Consider the progress in computer vision, that was made possible by:
+
 - Public datasets;
 - Public pre-trained models;
 - Open source frameworks;
 - Open research;
 
-TTS does not enjoy the same attention by ML community because it is data hungry and public datasets are lacking, especially for languages other than English.
+STT does not enjoy the same attention by ML community because it is data hungry and public datasets are lacking, especially for languages other than English.
 Ultimately it leads to worse-off situation for the general community.
 
 ## **3. Known issues with the dataset to be fixed**
@@ -477,12 +535,36 @@ Ultimately it leads to worse-off situation for the general community.
 - Speaker labels coming soon;
 - Validation sets for new domains: Radio/Public Speech will be added in next releases.
 
+## **4. Why migrate to OPUS?**
+
+After extensive testing, both during training and validation, we confirmed that converting 16kHz int16 data to OPUS does not at the very least degrade quality.
+
+Also designed for speech, OPUS even at default compression rates takes less space than MP3 and does not introduce artefacts.
+
+Some people even reported quality improvements when training using OPUS.
+
 # **License**
 
 ![сс-nc-by-license](https://static.wixstatic.com/media/342407_05e016f9f44240429203c35dfc8df63b~mv2.png/v1/fill/w_563,h_200,al_c,lg_1,q_80/342407_05e016f9f44240429203c35dfc8df63b~mv2.webp)
 
-Сc-by-nc and commercial usage available after agreement with dataset authors.
+CC-BY-NC and commercial usage available after agreement with dataset authors.
 
 # **Donations**
 
 [Donate](https://buymeacoff.ee/8oneCIN) (each coffee pays for several full downloads) or via [open_collective](https://opencollective.com/open_stt) or just use our DO referral [link](https://sohabr.net/habr/post/357748/) to help.
+
+# **Further reading**
+
+## **English**
+
+- https://thegradient.pub/towards-an-imagenet-moment-for-speech-to-text/
+- https://thegradient.pub/a-speech-to-text-practitioners-criticisms-of-industry-and-academia/
+
+## **Chinese**
+
+- https://www.infoq.cn/article/4u58WcFCs0RdpoXev1E2
+
+## **Russian**
+
+- https://habr.com/ru/post/494006/
+- https://habr.com/ru/post/474462/
