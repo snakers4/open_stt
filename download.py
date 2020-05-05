@@ -1,12 +1,10 @@
-#!/usr/bin/python
-import hashlib
 import os
+import hashlib
 from wget import download
 
 
-url = "https://ru-open-stt.ams3.digitaloceanspaces.com"
+url = "https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/"
 
-# download data
 with open("md5sum.lst") as f:
     for line in f:
         md5, file = line.rstrip().split(" ")

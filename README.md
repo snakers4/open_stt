@@ -12,10 +12,11 @@ Arguably the largest public Russian STT dataset up to date:
 - ~16m utterances (1-2m with less perfect annotation, see [#7](https://github.com/snakers4/open_stt/issues/7));
 - ~20 000 hours;
 - 2,3 TB (in `.wav` format in `int16`), 356G in `.opus`;
-- (**new!**) A new domain - public speech;
-- (**new!**) A huge Radio dataset update with **10 000+ hours**;
+- A new domain - public speech;
+- A huge Radio dataset update with **10 000+ hours**;
 - (**new!**) Utils for working with OPUS;
-- (**Coming soon!**) New OPUS torrent, **unlimited direct links**;
+- (**new!**) New OPUS torrent;
+- (**new!**) New OPUS direct links;
 
 Prove [us](mailto:open_stt@googlegroups.com) wrong!
 Open issues, collaborate, submit a PR, contribute, share your datasets!
@@ -47,27 +48,27 @@ Let's make STT in Russian (and more) as open and available as CV models.
 
 # **Dataset composition**
 
-| Dataset                   | Utterances | Hours | GB  | Av s/chars | Comment          | Annotation  | Quality/noise |
-|---------------------------|------------|-------|-----|------------|------------------|-------------|---------------|
-| radio_v4                  | 7,603,192  | 10,430 | 1,195 | 4.94s / 68 | Radio            | Alignment (*)| 95%  / crisp |
-| public_speech             | 1,700,060  | 2,709 | 301 | 5,73s / 79 | Public speech    | Alignment (*)| 95%  / crisp |
-| audiobook_2               | 1,149,404  | 1,511 | 162 | 4.7s / 56  | Books            | Alignment (*)| 95%  / crisp  |
-| radio_2                   |   651,645  | 1,439 | 154 | 7.95s / 110 | Radio            | Alignment (*)|  TBC, should be high            |
-| public_youtube1120        |  1,410,979 | 1,104 | 237 | 2.82s / 34 | Youtube videos    | Subtitles   | 95%  / ~crisp |
-| public_youtube700         |   759,483  |   701 |  75 | 3.3s / 43  | Youtube videos   | Subtitles   | 95%  / ~crisp |
-| tts_russian_addresses     | 1,741,838  |   754 |  81 | 1.6s / 20  | Russian addresses| TTS 4 voices| 100% / crisp  |
-| asr_public_phone_calls_2  |   603,797  |   601 |  66 | 3.6s / 37  | Phone calls      | ASR         | 70%  / noisy  |
-| public_youtube1120_hq     |   369,245  |   291 |  31 | 2.84s / 37 | YouTube videos HQ sound | Subtitles   | 95%  / ~crisp |
-| asr_public_phone_calls_1  |   233,868  |   211 |  23 | 3.3s / 29  | Phone calls      | ASR         | 70%  / noisy  |
-| radio_v4_add              |    92,679  |   157 | 18  | 6.1s / 80  | Radio            | Alignment (*)| 95%  / crisp |
-| asr_public_stories_2      |    78,186  |    78 |   9 | 3.5s / 43  | Books            | ASR         | 80%  / crisp  |
-| asr_public_stories_1      |    46,142  |    38 |   4 | 3.0s / 30  | Books            | ASR         | 80%  / crisp  |
-| public_series_1           |    20,243  |    17 |   2 | 3.1s / 38  | Youtube videos   | Subtitles   | 95%  / ~crisp |
-| asr_calls_2_val           |     12,950 |   7,7 |   2 | 2.15s / 34 | Phone calls      | Manual annotation | 99%  / crisp |
-| public_lecture_1          |     6,803  |     6 |   1 | 3.4s / 47  | Lectures         | Subtitles   | 95%  / crisp  |
-| buriy_audiobooks_2_val    |     7,850  |   4,9 |   1 | 2.25s / 31 | Books            | Manual annotation | 99%  / crisp |
-| public_youtube700_val     |     7,311  |   4,5 |   1 | 2.2 / 35   | Youtube videos   | Manual annotation | 99%  / crisp |
-| Total                     | 16,513,202‬  | 20,108 | 2,369 |            |                  |             |               |
+| Dataset                  | Utterances | Hours  | GB    | Av s/chars  | Comment                 | Annotation        | Quality/noise       |
+|--------------------------|------------|--------|-------|-------------|-------------------------|-------------------|---------------------|
+| radio_v4                 | 7,603,192  | 10,430 | 1,195 | 4.94s / 68  | Radio                   | Alignment (*)     | 95%  / crisp        |
+| public_speech            | 1,700,060  | 2,709  | 301   | 5,73s / 79  | Public speech           | Alignment (*)     | 95%  / crisp        |
+| audiobook_2              | 1,149,404  | 1,511  | 162   | 4.7s / 56   | Books                   | Alignment (*)     | 95%  / crisp        |
+| radio_2                  | 651,645    | 1,439  | 154   | 7.95s / 110 | Radio                   | Alignment (*)     | TBC, should be high |
+| public_youtube1120       | 1,410,979  | 1,104  | 237   | 2.82s / 34  | Youtube videos          | Subtitles         | 95%  / ~crisp       |
+| public_youtube700        | 759,483    | 701    | 75    | 3.3s / 43   | Youtube videos          | Subtitles         | 95%  / ~crisp       |
+| tts_russian_addresses    | 1,741,838  | 754    | 81    | 1.6s / 20   | Russian addresses       | TTS 4 voices      | 100% / crisp        |
+| asr_public_phone_calls_2 | 603,797    | 601    | 66    | 3.6s / 37   | Phone calls             | ASR               | 70%  / noisy        |
+| public_youtube1120_hq    | 369,245    | 291    | 31    | 2.84s / 37  | YouTube videos HQ sound | Subtitles         | 95%  / ~crisp       |
+| asr_public_phone_calls_1 | 233,868    | 211    | 23    | 3.3s / 29   | Phone calls             | ASR               | 70%  / noisy        |
+| radio_v4_add             | 92,679     | 157    | 18    | 6.1s / 80   | Radio                   | Alignment (*)     | 95%  / crisp        |
+| asr_public_stories_2     | 78,186     | 78     | 9     | 3.5s / 43   | Books                   | ASR               | 80%  / crisp        |
+| asr_public_stories_1     | 46,142     | 38     | 4     | 3.0s / 30   | Books                   | ASR               | 80%  / crisp        |
+| public_series_1          | 20,243     | 17     | 2     | 3.1s / 38   | Youtube videos          | Subtitles         | 95%  / ~crisp       |
+| asr_calls_2_val          | 12,950     | 7,7    | 2     | 2.15s / 34  | Phone calls             | Manual annotation | 99%  / crisp        |
+| public_lecture_1         | 6,803      | 6      | 1     | 3.4s / 47   | Lectures                | Subtitles         | 95%  / crisp        |
+| buriy_audiobooks_2_val   | 7,850      | 4,9    | 1     | 2.25s / 31  | Books                   | Manual annotation | 99%  / crisp        |
+| public_youtube700_val    | 7,311      | 4,5    | 1     | 2.2 / 35    | Youtube videos          | Manual annotation | 99%  / crisp        |
+| Total                    | 16,513,202‬ | 20,108 | 2,369 |             |                         |                   |                     |
 
 **(*) Automatic alignment**
 
@@ -75,6 +76,12 @@ This alignment was performed using Yuri's alignment tool.
 [Contact him](mailto:open_stt@googlegroups.com) if you need alignment for your own dataset.
 
 # **Updates**
+
+## **_Update 2020-05-04_**
+
+**Opus direct links**
+
+- Unlimited direct downloads via direct opus links
 
 ## **_Update 2020-05-04_**
 
@@ -178,34 +185,31 @@ If you are using Windows, you may use **Linux subsystem** to run these commands.
 
 ## **Links**
 
-**Coming soon** - new direct OPUS links!
+| Dataset                               | GB, wav | GB, archive | Archive                                                                                                                                                                | Source                                | Manifest                                                                                                                                         |
+|---------------------------------------|---------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| Train                                 |         |             |                                                                                                                                                                        |                                       |                                                                                                                                                  |
+| radio_v4                              | 1059    | 176         | [opus](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/radio_v4_manifest.tar.gz), [txt](https://forms.gle/nosMaNgj8MWKm99d9)      | Radio                                 | [manifest file](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/manifests/radio_v4_manifest.csv)                     |
+| public_speech                         | 257     | 47.4        | [opus](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/public_speech_manifest.tar.gz), [txt](https://forms.gle/nosMaNgj8MWKm99d9) | Sources from the Internet + alignment | [manifest file](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/manifests/public_speech_manifest.csv)                |
+| radio_v4_add                          | 15.7    | 2.8         | [opus](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/radio_v4_add_manifest.tar.gz), [txt](https://forms.gle/nosMaNgj8MWKm99d9)  | Radio                                 | [manifest file](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/manifests/radio_v4_add_manifest.csv)                 |
+| 5% of radio_v4 + public_speech        | -       | 11.4        | [opus+txt](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/radio_pspeech_sample_manifest.tar.gz)                                  | -                                     | [manifest file](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/manifests/radio_pspeech_sample_manifest.csv)         |
+| audiobook_2                           | 162     | 25.8        | [opus+txt](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/private_buriy_audiobooks_2.tar.gz)                                     | Sources from the Internet + alignment | [manifest file](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/manifests/private_buriy_audiobooks_2.csv)            |
+| radio_2                               | 154     | 24.6        | [opus+txt](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/radio_2.tar.gz)                                                        | Radio                                 | [manifest file](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/manifests/radio_2.csv)                               |
+| public_youtube1120                    | 237     | 19.0        | [opus+txt](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/public_youtube1120.tar.gz)                                             | YouTube videos                        | [manifest file](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/manifests/public_youtube1120.csv)                    |
+| asr_public_phone_calls_2              | 66      | 9.4         | [opus+txt](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/asr_public_phone_calls_2.tar.gz)                                       | Sources from the Internet + ASR       | [manifest file](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/manifests/asr_public_phone_calls_2.csv)              |
+| public_youtube1120_hq                 | 31      | 4.9         | [opus+txt](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/public_youtube1120_hq.tar.gz)                                          | YouTube videos                        | [manifest file](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/manifests/public_youtube1120_hq.csv)                 |
+| asr_public_stories_2                  | 9       | 1.4         | [opus+txt](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/asr_public_stories_2.tar.gz)                                           | Sources from the Internet + alignment | [manifest file](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/manifests/asr_public_stories_2.csv)                  |
+| tts_russian_addresses_rhvoice_4voices | 80.9    | 12.9        | [opus+txt](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/tts_russian_addresses_rhvoice_4voices.tar.gz)                          | TTS                                   | [manifest file](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/manifests/tts_russian_addresses_rhvoice_4voices.csv) |
+| public_youtube700                     | 75.0    | 12.2        | [opus+txt](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/public_youtube700.tar.gz)                                              | YouTube videos                        | [manifest file](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/manifests/public_youtube700.csv)                     |
+| asr_public_phone_calls_1              | 22.7    | 3.2         | [opus+txt](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/asr_public_phone_calls_1.tar.gz)                                       | Sources from the Internet + ASR       | [manifest file](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/manifests/asr_public_phone_calls_1.csv)              |
+| asr_public_stories_1                  | 4.1     | 0.7         | [opus+txt](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/asr_public_stories_1.tar.gz)                                           | Public stories                        | [manifest file](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/manifests/asr_public_stories_1.csv)                  |
+| public_series_1                       | 1.9     | 0.3         | [opus+txt](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/public_series_1.tar.gz)                                                | Public series                         | [manifest file](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/manifests/public_series_1.csv)                       |
+| public_lecture_1                      | 0.7     | 0.1         | [opus+txt](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/public_lecture_1.tar.gz)                                               | Sources from the Internet + manual    | [manifest file](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/manifests/public_lecture_1.csv)                      |
+| Val                                   |         |             |                                                                                                                                                                        |                                       |                                                                                                                                                  |
+| asr_calls_2_val                       | 2       | 0.8         | [wav+txt](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/asr_calls_2_val.tar.gz)                                                 | Sources from the Internet             | [manifest file](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/manifests/asr_calls_2_val.csv)                       |
+| buriy_audiobooks_2_val                | 1       | 0.5         | [wav+txt](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/buriy_audiobooks_2_val.tar.gz)                                          | Books + manual                        | [manifest file](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/manifests/buriy_audiobooks_2_val.csv)                |
+| public_youtube700_val                 | 2       | 0.13        | [wav+txt](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/public_youtube700_val.tar.gz)                                           | YouTube videos + manual               | [manifest file](https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/manifests/public_youtube700_val.csv)                 |
+| Total                                 | 2,186   | 354         |                                                                                                                                                                        |                                       |                                                                                                                                                  |
 
-All WAV or MP3 files / links / torrents to be superseded by OPUS.
-
-Total size of OPUS files is about 356G, so OPUS is ~10% smaller than MP3.
-
-| Dataset                               | GB, wav | GB, mp3 |  Mp3 |  Source | Manifest  |
-|---------------------------------------|------|----------------|-----|  -------| ----------|
-| radio_v4                              | 1059 | 263            | [mp3](https://ru-open-stt.ams3.digitaloceanspaces.com/radio_v4_mp3.tar.gz), [txt](https://forms.gle/nosMaNgj8MWKm99d9) | Radio | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/radio_v4_manifest.csv) |
-| public_speech                         | 257  | 38.5            | [mp3](https://ru-open-stt.ams3.digitaloceanspaces.com/public_speech_mp3.tar.gz), [txt](https://forms.gle/nosMaNgj8MWKm99d9) | Sources from the Internet + alignment | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_speech_manifest.csv) |
-| radio_v4_add                          | 15.7  | 2.2             | [mp3](https://ru-open-stt.ams3.digitaloceanspaces.com/radio_v4_add_mp3_reupload.tar.gz), [txt](https://forms.gle/nosMaNgj8MWKm99d9) | Radio | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/radio_v4_add_manifest.csv) |
-| 5% of radio_v4 + public_speech        | -    | 15.3            | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/radio_pspeech_sample_mp3.tar.gz) | - | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/radio_pspeech_sample_manifest.csv) |
-| audiobook_2                           | 162  | 21.0          | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/private_buriy_audiobooks_2_mp3.tar.gz) | Sources from the Internet + alignment | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/private_buriy_audiobooks_2.csv) |
-| radio_2                               | 154  | 25.7          | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/radio_2_mp3.tar.gz) | Radio | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/radio_2.csv) |
-| public_youtube1120                               | 237  | 32.4   | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120_mp3.tar.gz) | YouTube videos | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120.csv) |
-| asr_public_phone_calls_2              | 66   | 7.5           | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2_mp3.tar.gz) | Sources from the Internet + ASR | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_2.csv) |
-| public_youtube1120_hq                               | 31  | 8.6          | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120_hq_mp3.tar.gz) | YouTube videos | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube1120_hq.csv) |
-| asr_public_stories_2                  | 9   | 1.1              | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2_mp3.tar.gz)  | Sources from the Internet + alignment | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_2.csv) |
-| tts_russian_addresses_rhvoice_4voices | 80.9 | 9.9           | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices_mp3.tar.gz) | TTS | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/tts_russian_addresses_rhvoice_4voices.csv) |
-| public_youtube700                     | 75.0 | 9.6           | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700_mp3.tar.gz)   | YouTube videos | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700.csv) |
-| asr_public_phone_calls_1              | 22.7 | 2.6           | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_1_mp3.tar.gz)    | Sources from the Internet + ASR | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_phone_calls_1.csv) |
-| asr_public_stories_1                  | 4.1  | 0.5            | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_1_mp3.tar.gz)    | Public stories | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_public_stories_1.csv) |
-| public_series_1                       | 1.9  | 0.2            |  [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/public_series_1_mp3.tar.gz)    | Public series | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_series_1.csv) |
-| asr_calls_2_val                      | 2  | 0.2            | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_calls_2_val_mp3.tar.gz)    | Sources from the Internet  | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/asr_calls_2_val.csv) |
-| public_lecture_1                      | 0.7  | 0.1            | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/public_lecture_1_mp3.tar.gz)    | Sources from the Internet + manual  | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_lecture_1.csv) |
-| buriy_audiobooks_2_val                      | 1  | 0.15            | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/buriy_audiobooks_2_val_mp3.tar.gz)    | Books + manual | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/buriy_audiobooks_2_val.csv) |
-| public_youtube700_val                      | 2  | 0.13            | [mp3+txt](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700_val_mp3.tar.gz)    | YouTube videos + manual  | [manifest file](https://ru-open-stt.ams3.digitaloceanspaces.com/public_youtube700_val.csv) |
-| Total                                 | 2,186  | 391            |      | | | |
 
 ## **Download instructions**
 
@@ -368,6 +372,7 @@ Please contact us [here](mailto:open_stt@googlegroups.com) or just create a GitH
 
 This repo would not be possible without these people:
 
+- Newest direct download links are a courtesy of [Azure Open Datasets](https://azure.microsoft.com/en-us/services/open-datasets/);
 - Many thanks for helping to encode the initial bulk of the data into mp3 to [akreal](https://nuget.pkg.github.com/akreal);
 - 18 hours of ground truth annotation datasets for validation are a courtesy of [activebc](https://activebc.ru/);
 
