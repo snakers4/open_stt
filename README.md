@@ -343,7 +343,9 @@ make && make install
 cmake --build .
 ```
 
-## **Patched pysound file wrapper**
+## **Patched pysoundfile wrapper**
+
+Install pysoundfile `pip install soundfile`
 
 ```python3
 import utils.soundfile_opus as sf
