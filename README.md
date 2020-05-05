@@ -48,27 +48,27 @@ Let's make STT in Russian (and more) as open and available as CV models.
 
 # **Dataset composition**
 
-| Dataset                  | Utterances | Hours  | GB    | Av s/chars  | Comment                 | Annotation        | Quality/noise       |
-|--------------------------|------------|--------|-------|-------------|-------------------------|-------------------|---------------------|
-| radio_v4                 | 7,603,192  | 10,430 | 1,195 | 4.94s / 68  | Radio                   | Alignment (*)     | 95%  / crisp        |
-| public_speech            | 1,700,060  | 2,709  | 301   | 5,73s / 79  | Public speech           | Alignment (*)     | 95%  / crisp        |
-| audiobook_2              | 1,149,404  | 1,511  | 162   | 4.7s / 56   | Books                   | Alignment (*)     | 95%  / crisp        |
-| radio_2                  | 651,645    | 1,439  | 154   | 7.95s / 110 | Radio                   | Alignment (*)     | TBC, should be high |
-| public_youtube1120       | 1,410,979  | 1,104  | 237   | 2.82s / 34  | Youtube videos          | Subtitles         | 95%  / ~crisp       |
-| public_youtube700        | 759,483    | 701    | 75    | 3.3s / 43   | Youtube videos          | Subtitles         | 95%  / ~crisp       |
-| tts_russian_addresses    | 1,741,838  | 754    | 81    | 1.6s / 20   | Russian addresses       | TTS 4 voices      | 100% / crisp        |
-| asr_public_phone_calls_2 | 603,797    | 601    | 66    | 3.6s / 37   | Phone calls             | ASR               | 70%  / noisy        |
-| public_youtube1120_hq    | 369,245    | 291    | 31    | 2.84s / 37  | YouTube videos HQ sound | Subtitles         | 95%  / ~crisp       |
-| asr_public_phone_calls_1 | 233,868    | 211    | 23    | 3.3s / 29   | Phone calls             | ASR               | 70%  / noisy        |
-| radio_v4_add             | 92,679     | 157    | 18    | 6.1s / 80   | Radio                   | Alignment (*)     | 95%  / crisp        |
-| asr_public_stories_2     | 78,186     | 78     | 9     | 3.5s / 43   | Books                   | ASR               | 80%  / crisp        |
-| asr_public_stories_1     | 46,142     | 38     | 4     | 3.0s / 30   | Books                   | ASR               | 80%  / crisp        |
-| public_series_1          | 20,243     | 17     | 2     | 3.1s / 38   | Youtube videos          | Subtitles         | 95%  / ~crisp       |
-| asr_calls_2_val          | 12,950     | 7,7    | 2     | 2.15s / 34  | Phone calls             | Manual annotation | 99%  / crisp        |
-| public_lecture_1         | 6,803      | 6      | 1     | 3.4s / 47   | Lectures                | Subtitles         | 95%  / crisp        |
-| buriy_audiobooks_2_val   | 7,850      | 4,9    | 1     | 2.25s / 31  | Books                   | Manual annotation | 99%  / crisp        |
-| public_youtube700_val    | 7,311      | 4,5    | 1     | 2.2 / 35    | Youtube videos          | Manual annotation | 99%  / crisp        |
-| Total                    | 16,513,202‬ | 20,108 | 2,369 |             |                         |                   |                     |
+| Dataset                  | Utterances | Hours  | GB    | Secs/chars | Comment       | Annotation        | Quality/noise |
+|--------------------------|------------|--------|-------|------------|---------------|-------------------|---------------|
+| radio_v4                 | 7,603,192  | 10,430 | 1,195 | 5s / 68    | Radio         | Align (*)         | 95%  / crisp  |
+| public_speech            | 1,700,060  | 2,709  | 301   | 6s / 79    | Public speech | Align (*)         | 95%  / crisp  |
+| audiobook_2              | 1,149,404  | 1,511  | 162   | 5s / 56    | Books         | Align (*)         | 95%  / crisp  |
+| radio_2                  | 651,645    | 1,439  | 154   | 8s / 110   | Radio         | Align (*)         | 95%  / crisp  |
+| public_youtube1120       | 1,410,979  | 1,104  | 237   | 3s / 34    | Youtube       | Subtitles         | 95%  / ~crisp |
+| public_youtube700        | 759,483    | 701    | 75    | 3s / 43    | Youtube       | Subtitles         | 95%  / ~crisp |
+| tts_russian_addresses    | 1,741,838  | 754    | 81    | 2s / 20    | Addresses     | TTS 4 voices      | 100% / crisp  |
+| asr_public_phone_calls_2 | 603,797    | 601    | 66    | 4s / 37    | Phone calls   | ASR               | 70%  / noisy  |
+| public_youtube1120_hq    | 369,245    | 291    | 31    | 3s / 37    | YouTube HQ    | Subtitles         | 95%  / ~crisp |
+| asr_public_phone_calls_1 | 233,868    | 211    | 23    | 3s / 29    | Phone calls   | ASR               | 70%  / noisy  |
+| radio_v4_add             | 92,679     | 157    | 18    | 6s / 80    | Radio         | Align (*)         | 95%  / crisp  |
+| asr_public_stories_2     | 78,186     | 78     | 9     | 4s / 43    | Books         | ASR               | 80%  / crisp  |
+| asr_public_stories_1     | 46,142     | 38     | 4     | 3s / 30    | Books         | ASR               | 80%  / crisp  |
+| public_series_1          | 20,243     | 17     | 2     | 3s / 38    | Youtube       | Subtitles         | 95%  / ~crisp |
+| asr_calls_2_val          | 12,950     | 7,7    | 2     | 2s / 34    | Phone calls   | Manual annotation | 99%  / crisp  |
+| public_lecture_1         | 6,803      | 6      | 1     | 3s / 47    | Lectures      | Subtitles         | 95%  / crisp  |
+| buriy_audiobooks_2_val   | 7,850      | 4,9    | 1     | 2s / 31    | Books         | Manual annotation | 99%  / crisp  |
+| public_youtube700_val    | 7,311      | 4,5    | 1     | 2s / 35    | Youtube       | Manual annotation | 99%  / crisp  |
+| Total                    | 16,513,202‬ | 20,108 | 2,369 |            |               |                   |               |
 
 **(*) Automatic alignment**
 
