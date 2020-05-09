@@ -77,6 +77,14 @@ This alignment was performed using Yuri's alignment tool.
 
 # **Updates**
 
+## **_Update 2020-05-09_**
+
+**Legacy links and torrents deprecated**
+
+- All legacy link and torrents deprecated
+- Please switch to new links and opus
+- Opus helpers are available in this repo
+
 ## **_Update 2020-05-04_**
 
 **Opus direct links**
