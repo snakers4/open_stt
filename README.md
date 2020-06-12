@@ -578,6 +578,7 @@ CC-BY-NC and commercial usage available after agreement with dataset authors.
 ## **Chinese**
 
 - https://www.infoq.cn/article/4u58WcFCs0RdpoXev1E2
+- https://www.infoq.cn/article/lEe6GCRjF1CNToVITvNw
 
 ## **Russian**
 
