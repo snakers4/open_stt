@@ -77,6 +77,12 @@ This alignment was performed using Yuri's alignment tool.
 
 # **Updates**
 
+## **_Update 2020-06-13_**
+
+**Now featured via Azure Datasets:**
+
+- https://azure.microsoft.com/en-us/services/open-datasets/catalog/open-speech-to-text/
+
 ## **_Update 2020-05-09_**
 
 **Legacy links and torrents deprecated**
