@@ -70,11 +70,6 @@ Let's make STT in Russian (and more) as open and available as CV models.
 | public_youtube700_val    | 7,311      | 4,5    | 1     | 2s / 35    | Youtube       | Manual annotation | 99%  / crisp  |
 | Total                    | 16,513,202‬ | 20,108 | 2,369 |            |               |                   |               |
 
-**(*) Automatic alignment**
-
-This alignment was performed using Yuri's alignment tool.
-[Contact him](mailto:open_stt@googlegroups.com) if you need alignment for your own dataset.
-
 # **Updates**
 
 ## **_Update 2020-06-13_**
@@ -382,7 +377,6 @@ Please contact us [here](mailto:open_stt@googlegroups.com) or just create a GitH
 - Alexander Veysov;
 - Diliara Nurtdinova;
 - Dmitry Voronin;
-- Yuri Baburov;
 
 # **Acknowledgements**
 
