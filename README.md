@@ -6,6 +6,8 @@
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Mailing list : test](https://img.shields.io/badge/Contact-Authors-blue.svg)](mailto:open_stt@googlegroups.com)
 
+![header)](https://user-images.githubusercontent.com/12515440/89997349-b3523080-dc94-11ea-9906-ca2e8bc50535.png)
+
 # **Russian Open Speech To Text (STT/ASR) Dataset**
 
 Arguably the largest public Russian STT dataset up to date:
@@ -44,6 +46,7 @@ Let's make STT in Russian (and more) as open and available as CV models.
 - [FAQ](https://github.com/snakers4/open_stt/#faq)
 - [License](https://github.com/snakers4/open_stt/#license)
 - [Donations](https://github.com/snakers4/open_stt/#donations)
+- [Commerical inquiries](https://github.com/snakers4/open_stt/#commerical_inquiries)
 - [Further reading](https://github.com/snakers4/open_stt/#further-reading)
 
 # **Dataset composition**
@@ -567,6 +570,10 @@ CC-BY-NC and commercial usage available after agreement with dataset authors.
 # **Donations**
 
 [Donate](https://buymeacoff.ee/8oneCIN) (each coffee pays for several full downloads) or via [open_collective](https://opencollective.com/open_stt) or just use our DO referral [link](https://sohabr.net/habr/post/357748/) to help.
+
+# **Commerical inquiries**
+
+Via email - open_stt@googlegroups.com
 
 # **Further reading**
 
