@@ -1,10 +1,10 @@
-![](https://img.shields.io/github/v/release/snakers4/open_stt?include_prereleases&style=for-the-badge)
+![](https://img.shields.io/github/v/release/snakers4/open_stt?include_prereleases&style=for-the-badge) [![Mailing list : test](http://img.shields.io/badge/Email-gray.svg?style=for-the-badge&logo=gmail)](mailto:open_stt@googlegroups.com) [![Mailing list : test](http://img.shields.io/badge/Telegram-blue.svg?style=for-the-badge&logo=telegram)](https://t.me/joinchat/Bv9tjhpdXTI22OUgpOIIDg)
+
 
 [![Donations](https://opencollective.com/open_stt/tiers/donation/badge.svg?label=donations&color=brightgreen)](https://opencollective.com/open_stt)
 [![Backers](https://opencollective.com/open_stt/tiers/backer/badge.svg?label=backers&color=brightgreen)](https://opencollective.com/open_stt)
 [![Sponsors](https://opencollective.com/open_stt/tiers/sponsor/badge.svg?label=sponsors&color=brightgreen)](https://opencollective.com/open_stt)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
-[![Mailing list : test](https://img.shields.io/badge/Contact-Authors-blue.svg)](mailto:open_stt@googlegroups.com)
 
 ![header)](https://user-images.githubusercontent.com/12515440/89997349-b3523080-dc94-11ea-9906-ca2e8bc50535.png)
 
@@ -573,7 +573,8 @@ CC-BY-NC and commercial usage available after agreement with dataset authors.
 
 # **Commerical inquiries**
 
-Via email - open_stt@googlegroups.com
+- Via email - open_stt@googlegroups.com
+- Via telegram - via this [link](https://t.me/joinchat/Bv9tjhpdXTI22OUgpOIIDg)
 
 # **Further reading**
 
