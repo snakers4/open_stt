@@ -75,6 +75,10 @@ Let's make STT in Russian (and more) as open and available as CV models.
 
 # **Updates**
 
+## **_Update 2020-09-23_**
+
+Now hosting a torrent via aria2c as well. Please use aria2c to download as well.
+
 ## **_Update 2020-06-13_**
 
 **Now featured via Azure Datasets:**
