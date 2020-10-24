@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mirror="https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/"
+mirror="https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus"
 
 while true; do
 	for file in $(cut -f2 -d' ' md5sum.lst); do
