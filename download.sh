@@ -4,7 +4,8 @@ mirror="https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_o
 
 while true; do
 	for file in $(cut -f2 -d' ' md5sum.lst); do
-		wget -c "${mirror}/${file}"
+		mkdir -p $(dirname ${file})
+		wget -O ${file} -c "${mirror}/${file}"
 	done
 
 	echo ''
