@@ -24,6 +24,8 @@ Prove [us](mailto:open_stt@googlegroups.com) wrong!
 Open issues, collaborate, submit a PR, contribute, share your datasets!
 Let's make STT in Russian (and more) as open and available as CV models.
 
+Important - assume that `ё` everywhere is replaced with `е`.
+
 **Planned releases:**
 
 - Working on a new project with 3 more languages, stay tuned!
