@@ -268,6 +268,20 @@ or
 2. Download the meta data and manifests for each dataset:
 3. Merge files (where applicable), unpack and enjoy!
 
+### Manually (using AzCopy) (2022-03-10)
+
+When downloading large files from Azure `wget` downlaod may restart so often that it is impossible to download the largest file `archives/radio_v4_manifest.tar.gz` (176GB).
+
+In that case you can use [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) util.
+
+Instructions to download files using it are [here](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-blobs-download). For the large file mentioned earlier you need to run
+
+`azcopy[.exe] copy https://azureopendatastorage.blob.core.windows.net/openstt/ru_open_stt_opus/archives/radio_v4_manifest.tar.gz radio_v4_manifest.tar.gz`
+
+command if you want to download file to the same folder where `azcopy[.exe]` is located.
+
+
+
 # **Annotation methodology**
 
 The dataset is compiled using open domain sources.
